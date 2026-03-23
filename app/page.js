@@ -6,6 +6,7 @@ const page = () => {
   return (
     <div>
       <Navbar/>
+      <Contact/>
       <Footer/>
     </div>
   )
