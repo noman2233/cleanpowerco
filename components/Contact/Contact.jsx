@@ -1,21 +1,16 @@
 "use client";
 import React from "react";
-import styles from "../../styles/contact.module.css";
+import styles from "./contact.module.css";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { FaMailBulk } from "react-icons/fa";
- import * as Yup from "yup";
+import * as Yup from "yup";
 import { Formik } from "formik";
-import {
-  malik_phone,
-  malik_email,
-  malik_address,
-  contact_para,
-} from "../data/string";
 import emailjs from "emailjs-com";
 import { ToastContainer } from "react-toastify";
 import { toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import InputComponent from "../inputComponent/InputComponent";
+import { website_email, website_phone ,contact_para} from "../data";
 
 const Contact = () => {
   // ✅ Validation Schema
@@ -102,9 +97,8 @@ const Contact = () => {
           <div className={styles.contactInfo}>
             <h4 className={styles.contactSubtitle}>Contact Us</h4>
             <h1 className={styles.contactTitle}>
-              Get in touch to discuss your <span>next project</span>
+              Get in touch with us
             </h1>
-            <p className={styles.contactDesc}>{contact_para}</p>
 
             <div className={styles.contactDetails}>
               <div className={styles.contactItem}>
@@ -113,7 +107,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3>Phone Number</h3>
-                  <p className={styles.contactForm_para}>{malik_phone}</p>
+                  <p className={styles.contactForm_para}>{website_phone}</p>
                 </div>
               </div>
 
@@ -124,11 +118,11 @@ const Contact = () => {
                 <div>
                   <h3>E-Mail</h3>
                   <a
-                    href={`mailto:${malik_email}`}
+                    href={`mailto:${website_email}`}
                     // className={styles.emailLink}
                     // className={styles.contactForm_para}
                   >
-                    <p className={styles.contactForm_para}>{malik_email}</p>
+                    <p className={styles.contactForm_para}>{website_email}</p>
                   </a>
                 </div>
               </div>
@@ -139,7 +133,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3>Address</h3>
-                  <p className={styles.contactForm_para}>{malik_address}</p>
+                  <p className={styles.contactForm_para}>{website_phone}</p>
                 </div>
               </div>
             </div>

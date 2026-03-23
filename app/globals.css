@@ -1,0 +1,44 @@
+
+
+:root {
+  /* 🎨 Colors */
+  --color-primary: #f6952e;
+  --color-blue:#00d2ff;
+  --color-dark:black;
+  --color-light-gray: #e4e4e4;
+
+  --gradient: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  --shadow:0 8px 25px rgba(0, 255, 128, 0.2)
+
+ 
+  /* ✍️ Fonts */
+  --font-body: var(--font-space-grotesk), sans-serif;
+  --font-text: var(--font-space-grotesk), sans-serif;
+  --font-heading: var(--font-bebas-neue), sans-serif;
+  --font-poppins: var(--font-poppins), sans-serif;
+ 
+}
+
+/* Example defaults */
+body {
+  color: var(--color-dark);
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.navLinks li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navLinks li:hover {
+  color: #00bfff; /* sky blue */
+}
+
+a{
+  text-decoration: none;
+}
+ 
+ 

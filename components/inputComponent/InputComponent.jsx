@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "../../styles/inputComponent.module.css";
+import styles from "./inputComponent.module.css";
 
 const  InputComponent=({
   label,

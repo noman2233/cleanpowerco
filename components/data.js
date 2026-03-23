@@ -2,6 +2,10 @@ export const app_logo =
   "https://www.cleanpowerco.com.au/wp-content/uploads/2018/11/logo.png";
 import { IoIosArrowForward } from "react-icons/io";
 
+export const website_email="admin@cleanpowerco.com.au"
+export const website_phone="1300976741"
+export const contact_para="1300976741"
+
 export const MENU_ITEMS = [
   { label: "Home", id: "home", path: "/", icon: IoIosArrowForward },
   { label: "Products", id: "products", path: "/", icon: IoIosArrowForward },
