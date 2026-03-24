@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './AboutSection.module.css';
+import { website_phone } from '../data';
 
 const AboutSection = () => {
   return (
@@ -53,7 +54,8 @@ const AboutSection = () => {
               </div>
               <div>
                 <span className={styles.phoneLabel}>The Future of Solar Energy</span>
-                <span className={styles.phoneNumber}>123-456-789</span>
+                {/* <span className={styles.phoneNumber}>123-456-789</span> */}
+                <span className={styles.phoneNumber}>{website_phone}</span>
               </div>
             </div>
 

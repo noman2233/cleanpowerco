@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { CgLogIn } from "react-icons/cg";
 import { app_logo, MENU_ITEMS } from "../data";
 import Link from "next/link";
+import { BiPhone, BiPhoneCall } from "react-icons/bi";
 
  
 const SideMenu = ({ isMenuOpen, setIsMenuOpen }) => {
@@ -74,8 +75,8 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }) => {
                 className={styles.logoutBtn}
                 onClick={() => console.log("Logout and clear JWT")}
               >
+                <BiPhoneCall />
                 Contact Us
-                <CgLogIn />
               </button>
             </Link>
           </div>

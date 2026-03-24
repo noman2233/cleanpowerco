@@ -1,3 +1,8 @@
+.mainSlider {
+  margin: 200px 0px 50px 0px;
+  z-index: 999;
+}
+
 .sliderContainer {
   width: 100%;
   overflow: hidden;
@@ -20,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   /* Responsive sizing for the logo boxes */
   width: 140px;
   height: 80px;
@@ -35,7 +40,8 @@
 }
 
 /* Fading effect on edges for professional look */
-.fadeOverlayLeft, .fadeOverlayRight {
+.fadeOverlayLeft,
+.fadeOverlayRight {
   position: absolute;
   top: 0;
   width: 100px;

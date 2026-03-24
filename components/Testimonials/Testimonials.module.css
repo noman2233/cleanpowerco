@@ -1,0 +1,137 @@
+.testimonialsSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  /* Background world map image can be added here */
+  background-image: url('https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/map.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  color: #e2cc45; /* Gold accent */
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a1e26;
+  margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile default */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+
+.card {
+  padding: 40px;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.whiteCard {
+  background-color: #fcfcfc;
+}
+
+.greenCard {
+  background-color: #27a770; /* Primary Green */
+  color: #ffffff;
+}
+
+.quoteWrapper {
+  margin-bottom: 20px;
+}
+
+.quoteIcon {
+  font-size: 30px;
+  color: #e2cc45;
+}
+
+.testimonialText {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatarWrapper {
+  border: 2px solid #e2cc45;
+  border-radius: 50%;
+  padding: 3px;
+  width: 60px;
+  height: 60px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.greenCard .name {
+  color: #e2cc45;
+}
+
+.whiteCard .name {
+  color: #e2cc45;
+}
+
+.role {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.greenCard .role {
+  color: #e0e0e0;
+}
+
+/* Responsive Breakpoints */
+
+/* Tablet/Medium Screens */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .title {
+    font-size: 42px;
+  }
+}
+
+/* Ultra Small Screens */
+@media (max-width: 400px) {
+  .card {
+    padding: 25px;
+  }
+}

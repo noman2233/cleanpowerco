@@ -1,17 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import {
- 
-  FaLocationPin,
-  FaMailchimp,
-  FaPhone,
-} from "react-icons/fa6";
+import { FaLocationPin, FaMailchimp, FaPhone } from "react-icons/fa6";
 import styles from "./Footer.module.css";
-import { app_logo } from "../data";
- 
+import { app_logo, footer_text } from "../data";
 
-const Footer =() => {
-  const data=new Date()?.getFullYear()
+const Footer = () => {
+  const data = new Date()?.getFullYear();
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -23,33 +17,44 @@ const Footer =() => {
                 <img src={app_logo} alt="Logo" className={styles.applogo} />
               </div>
             </Link>
-            
-      
-            <p className={styles.companyInfo}>
-              Our furniture shop blends timeless craftsmanship with modern
-              design to transform your living spaces into personalized
-              sanctuaries of comfort and style.
-            </p>
+
+            <p className={styles.companyInfo}>{footer_text}</p>
           </div>
 
           <div className={styles.linksGrid}>
             <div className={styles.linkGroup}>
-              <h4>Product</h4>
-              <ul>
-                <li><Link href="/features">Products</Link></li>
-                <li><Link href="/pricing">Categories</Link></li>
-                <li><Link href="/integrations">Featured Product</Link></li>
-                <li><Link href="/team">Our Team</Link></li>
-              </ul>
-            </div>
-            
-            <div className={styles.linkGroup}>
               <h4>Useful Links</h4>
               <ul>
-                <li><Link href="/about">About</Link></li>
-                <li><Link href="/contact">Contact</Link></li>
-                <li><Link href="/return-policy">Return Policy</Link></li>
-                <li><Link href="/shipping-policy">Shipping</Link></li>
+                <li>
+                  <Link href="/about">About</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
+                <li>
+                  <Link href="/return-policy">Return Policy</Link>
+                </li>
+                <li>
+                  <Link href="/shipping-policy">Shipping</Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.linkGroup}>
+              <h4>Services</h4>
+              <ul>
+                <li>
+                  <Link href="/features">Solar Solutions</Link>
+                </li>
+                <li>
+                  <Link href="/pricing">Categories</Link>
+                </li>
+                <li>
+                  <Link href="/integrations">Featured Product</Link>
+                </li>
+                <li>
+                  <Link href="/team">Our Team</Link>
+                </li>
               </ul>
             </div>
 
@@ -74,7 +79,11 @@ const Footer =() => {
         </div>
 
         <div className={styles.bottomSection}>
-          <p> @ {data}  <span className={styles.ownername}>cleanpowerco.com</span> All rights reserved.</p>
+          <p>
+            {" "}
+            @ {data} <span className={styles.ownername}>cleanpowerco.com</span>{" "}
+            All rights reserved.
+          </p>
           <div className={styles.legalLinks}>
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>

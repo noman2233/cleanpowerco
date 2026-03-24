@@ -36,12 +36,11 @@ const HeroSection = () => {
   const [currentBg, setCurrentBg] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
 
-  // Fix Hydration Error: Only run logic after component is mounted on client
   useEffect(() => {
     setIsMounted(true);
     const timer = setInterval(() => {
       setCurrentBg((prev) => (prev + 1) % bgImages.length);
-    }, 2000);
+    }, 4000);
     return () => clearInterval(timer);
   }, []);
 
@@ -49,41 +48,42 @@ const HeroSection = () => {
   if (!isMounted) return <div className={styles.heroFallback} />;
 
   return (
-    <section className={styles.hero}>
-      <div className={styles.slideshowWrapper}>
-        <AnimatePresence>
-          <motion.div
-            key={currentBg}
-            className={styles.bgImageContainer}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-          >
-            <Image
-              src={bgImages[currentBg]}
-              alt="Clean Energy Background"
-              fill
-              className={styles.objectCover}
-              priority // Keeps it ready
-            />
-            <div className={styles.overlay}></div>
-          </motion.div>
-        </AnimatePresence>
-      </div>
+    <div className={styles.heroContainer}>
+      <section className={styles.hero}>
+        <div className={styles.slideshowWrapper}>
+          <AnimatePresence>
+            <motion.div
+              key={currentBg}
+              className={styles.bgImageContainer}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+            >
+              <Image
+                src={bgImages[currentBg]}
+                alt="Clean Energy Background"
+                fill
+                className={styles.objectCover}
+                priority // Keeps it ready
+              />
+              <div className={styles.overlay}></div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
-      <div className={styles.contentWrapper}>
-        <span className={styles.tagline}>INSTANT . SIMPLE . EXCELLENCE</span>
-        <h1 className={styles.mainTitle}>
-         TURN SOLAR 
-          <br />
-          INTO POWER
-        </h1>
-        <button className={styles.getStartedBtn}>
-          Get Started <HiArrowRight className={styles.arrow} />
-        </button>
-      </div>
-
+        <div className={styles.contentWrapper}>
+          <span className={styles.tagline}>INSTANT . SIMPLE . EXCELLENCE</span>
+          <h1 className={styles.mainTitle}>
+            TURN SOLAR
+            <br />
+            INTO POWER
+          </h1>
+          <button className={styles.getStartedBtn}>
+            Get Started <HiArrowRight className={styles.arrow} />
+          </button>
+        </div>
+      </section>
       <div className={styles.cardSection}>
         <div className={styles.cardContainer}>
           {featureCards.map((card, index) => (
@@ -97,7 +97,7 @@ const HeroSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
