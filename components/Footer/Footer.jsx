@@ -11,6 +11,7 @@ import { app_logo } from "../data";
  
 
 const Footer =() => {
+  const data=new Date()?.getFullYear()
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -73,7 +74,7 @@ const Footer =() => {
         </div>
 
         <div className={styles.bottomSection}>
-          <p>© 2026 Graphy. All rights reserved.</p>
+          <p> @ {data}  <span className={styles.ownername}>cleanpowerco.com</span> All rights reserved.</p>
           <div className={styles.legalLinks}>
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>

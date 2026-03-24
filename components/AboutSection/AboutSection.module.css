@@ -1,0 +1,193 @@
+.container {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* IMAGE SIDE */
+.imageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 1 / 1; /* Keep it square like the image */
+  width: 100%;
+  overflow: hidden;
+}
+
+.notch {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  z-index: 2;
+}
+
+/* CONTENT SIDE */
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #27a770;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #e2cc45;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 1.2;
+  color: #1a1a1a;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #444;
+}
+
+.check {
+  background-color: #27a770;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+/* FOOTER SECTION (Phone & Trust Box) */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phoneIcon {
+  color: #333;
+}
+
+.phoneLabel {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.phoneNumber {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.trustBox {
+  background-color: #27a770;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.readMore {
+  background-color: #e2cc45;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
+  transition: opacity 0.2s;
+}
+
+.readMore:hover {
+  opacity: 0.9;
+}
+
+/* --- RESPONSIVENESS --- */
+/* Desktop (Large) */
+@media (min-width: 1024px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .imageContainer {
+    flex: 1;
+  }
+
+  .contentContainer {
+    flex: 1;
+    padding-left: 40px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}
+
+/* Tablet & Up (Medium) */
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .trustBox {
+    width: 250px;
+  }
+}

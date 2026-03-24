@@ -1,0 +1,140 @@
+.container {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  color: #e2cc45;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #1a1a1a;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+.objectCover {
+  object-fit: cover;
+}
+
+.iconBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #27a770;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.cardBody {
+  display: flex;
+  position: relative;
+  min-height: 160px;
+}
+
+.textContainer {
+  padding: 30px;
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.cardText {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.readMoreBtn {
+  background-color: #e2cc45;
+  width: 35px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.readMoreBtn span {
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+  white-space: nowrap;
+  transform: rotate(90deg);
+  letter-spacing: 1px;
+}
+
+/* --- RESPONSIVENESS --- */
+
+/* Small Screens (Phone) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+  .imageWrapper {
+    height: 200px;
+  }
+}
+
+/* Tablets (Medium) */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (Large) */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .title {
+    font-size: 48px;
+  }
+}

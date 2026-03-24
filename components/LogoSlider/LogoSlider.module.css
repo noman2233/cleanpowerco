@@ -1,0 +1,79 @@
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  background-color: #f8f9fa; /* Light grey background from your image */
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logoTrack {
+  display: flex;
+  width: fit-content;
+  gap: 20px; /* Space between logo cards */
+}
+
+.logoItem {
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Responsive sizing for the logo boxes */
+  width: 140px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.logoImage {
+  max-width: 80%;
+  max-height: 50%;
+  object-fit: contain;
+  filter: grayscale(0); /* Change to 100% if you want them all grey */
+}
+
+/* Fading effect on edges for professional look */
+.fadeOverlayLeft, .fadeOverlayRight {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fadeOverlayLeft {
+  left: 0;
+  background: linear-gradient(to right, #f8f9fa, transparent);
+}
+
+.fadeOverlayRight {
+  right: 0;
+  background: linear-gradient(to left, #f8f9fa, transparent);
+}
+
+/* --- RESPONSIVENESS --- */
+
+/* Medium Screens (Tablets) */
+@media (min-width: 768px) {
+  .logoItem {
+    width: 180px;
+    height: 100px;
+  }
+  .logoTrack {
+    gap: 30px;
+  }
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 1024px) {
+  .logoItem {
+    width: 220px;
+    height: 120px;
+  }
+  .logoTrack {
+    gap: 40px;
+  }
+}

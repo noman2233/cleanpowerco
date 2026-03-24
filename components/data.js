@@ -8,15 +8,14 @@ export const contact_para="1300976741"
 
 export const MENU_ITEMS = [
   { label: "Home", id: "home", path: "/", icon: IoIosArrowForward },
-  { label: "Products", id: "products", path: "/", icon: IoIosArrowForward },
-  { label: "Shop", id: "shop", path: "/", icon: IoIosArrowForward },
+  { label: "Services", id: "Services", path: "/services", icon: IoIosArrowForward }, // Path changed
   { label: "About", id: "about", path: "/about", icon: IoIosArrowForward }, // Path changed
-  {
-    label: "Testimonials",
-    id: "testimonials",
-    path: "/",
-    icon: IoIosArrowForward,
-  },
+  // {
+  //   label: "Testimonials",
+  //   id: "testimonials",
+  //   path: "/",
+  //   icon: IoIosArrowForward,
+  // },
   { label: "FAQs", id: "faqs", path: "/", icon: IoIosArrowForward },
   { label: "Contact", id: "contact", path: "/", icon: IoIosArrowForward },
 ];

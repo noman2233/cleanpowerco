@@ -1,10 +1,7 @@
-import {
-  Poppins,
-  Plus_Jakarta_Sans,
-} from "next/font/google";
+import { Poppins, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 const PlusJakartaSans = Plus_Jakarta_Sans({
-  weight: ["400",'500','600','700','800'], // Bebas Neue only has 400 weight
+  weight: ["400", "500", "600", "700", "800"], // Bebas Neue only has 400 weight
   subsets: ["latin"],
   display: "swap",
   variable: "--font-jakarta",
@@ -20,8 +17,9 @@ export const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Abdul Maalik - Portfolio",
-  description: "Video Editor Portfolio",
+  title: "Clean Power Energy | Smart Solar Solutions for a Sustainable Future",
+  description:
+    "Clean Power Energy provides reliable and affordable solar energy solutions for homes and businesses. Reduce your energy bills and carbon footprint with our high-quality solar systems and expert installation services.",
 };
 
 export default function RootLayout({ children }) {

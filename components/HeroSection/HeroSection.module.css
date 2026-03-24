@@ -1,0 +1,190 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1a1e26; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* --- BACKGROUND SLIDESHOW --- */
+.slideshowWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.heroFallback {
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1e26;  
+}
+
+/* Ensure icons align well */
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bgImageContainer {
+  position: absolute; /* Changed from relative to absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.objectCover {
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay from image */
+}
+
+/* --- HERO CONTENT --- */
+.contentWrapper {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 100px 20px 20px 20px; /* Top padding to account for fixed header */
+  flex-grow: 1; /* Pushes cards to the bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline {
+  color: #e2cc45; /* Golden Yellow */
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.mainTitle {
+  color: #ffffff;
+  font-size: 66px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.getStartedBtn {
+  background-color: #27a770; /* Emeral Green */
+  color: #ffffff;
+  border: none;
+  padding: 15px 35px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.getStartedBtn:hover {
+  opacity: 0.9;
+}
+
+/* --- OVERLAPPING CARDS --- */
+.cardSection {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  padding: 0 20px 80px 20px;
+  background: linear-gradient(to top, #ffffff 50%, transparent 50%); /* For the overlap */
+}
+
+.cardContainer {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  /* display: grid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* grid-template-columns: 3fr; */
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  display: flex;
+  /* align-items: flex-start; */
+  gap: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.cardIcon {
+  flex-shrink: 0;
+}
+
+.cardText h3 {
+  color: #1a1a1a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cardText p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* --- RESPONSIVENESS --- */
+
+
+/* Desktop (Large) */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: calc(100vh + 100px); /* Extend height for the overlap effect */
+  }
+
+  .mainTitle {
+    font-size: 56px;
+  }
+
+  .cardContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* The magic overlap on large screens */
+  .cardSection {
+    transform: translateY(100px);
+    background: transparent; /* Rely on body background color */
+  }
+}
+
+/* Tablets (Medium) */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 48px;
+  }
+}
+
+
+/* Small Screens (Phone) */
+@media (max-width: 480px) {
+  .mainTitle {
+    font-size: 28px;
+  }
+}
