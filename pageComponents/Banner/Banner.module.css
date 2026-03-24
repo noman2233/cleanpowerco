@@ -1,0 +1,79 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden; /* Ensures image doesn't bleed out */
+}
+
+.bgImage {
+  object-fit: cover; /* Equivalent to background-size: cover */
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for text legibility */
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 10; /* Above overlay and image */
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(32px, 5vw, 60px);
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.breadcrumbText {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.separator {
+  color: var(--primary-green, #27a770); /* Optional color for the square */
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.sideIcons {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 15;
+}
+
+.iconWrapper {
+  background-color: #ffffff; /* Or match your brand colors */
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.iconWrapper:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+  .banner {
+    height: 250px;
+  }
+}

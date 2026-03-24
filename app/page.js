@@ -21,7 +21,6 @@ const page = () => {
       <AboutSection/>
       <WhyChooseUs/>
       <Testimonials/>
-      {/* <Contact/> */}
       <Footer/>
     </div>
   )

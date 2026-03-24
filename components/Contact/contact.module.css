@@ -16,6 +16,15 @@
   flex-wrap: wrap;
 }
 
+.contactItem h3{
+  color: white;
+}
+.contactItem p{
+
+    color: white;
+
+}
+
 /* ===== Left Side ===== */
 .contactInfo {
   flex: 1;
@@ -62,7 +71,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-green);
   padding: 10px 20px;
   border-radius: 10px;
     transition: all 0.4s ease-in-out;
@@ -80,15 +89,15 @@
   height: 40px; */
   padding: 12px;
   border-radius: 50%;
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .icon_contact {
-  font-size: 18px;
-  color: white;
+  font-size: 35px;
+  color: var(--color-primary);
 }
 
 /* ===== Right Side ===== */

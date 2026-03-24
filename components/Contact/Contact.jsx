@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import styles from "./contact.module.css";
-import { FaLocationDot, FaPhone } from "react-icons/fa6";
-import { FaMailBulk } from "react-icons/fa";
 import * as Yup from "yup";
 import { Formik } from "formik";
 import emailjs from "emailjs-com";
@@ -10,7 +8,9 @@ import { ToastContainer } from "react-toastify";
 import { toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import InputComponent from "../inputComponent/InputComponent";
-import { website_email, website_phone ,contact_para} from "../data";
+import { website_email, website_phone } from "../data";
+import { MdOutlineMarkEmailRead ,MdOutlinePhonelinkRing} from "react-icons/md";
+ import { IoLocationOutline } from "react-icons/io5";
 
 const Contact = () => {
   // ✅ Validation Schema
@@ -103,7 +103,7 @@ const Contact = () => {
             <div className={styles.contactDetails}>
               <div className={styles.contactItem}>
                 <div className={styles.iconCircle}>
-                  <FaPhone className={styles.icon_contact} />
+                  <MdOutlinePhonelinkRing className={styles.icon_contact} />
                 </div>
                 <div>
                   <h3>Phone Number</h3>
@@ -113,7 +113,7 @@ const Contact = () => {
 
               <div className={styles.contactItem}>
                 <div className={styles.iconCircle}>
-                  <FaMailBulk className={styles.icon_contact} />
+                  <MdOutlineMarkEmailRead className={styles.icon_contact} />
                 </div>
                 <div>
                   <h3>E-Mail</h3>
@@ -129,7 +129,7 @@ const Contact = () => {
 
               <div className={styles.contactItem}>
                 <div className={styles.iconCircle}>
-                  <FaLocationDot className={styles.icon_contact} />
+                  <IoLocationOutline className={styles.icon_contact} />
                 </div>
                 <div>
                   <h3>Address</h3>

@@ -23,7 +23,7 @@ export const MENU_ITEMS = [
   //   icon: IoIosArrowForward,
   // },
   { label: "FAQs", id: "faqs", path: "/", icon: IoIosArrowForward },
-  { label: "Contact", id: "contact", path: "/", icon: IoIosArrowForward },
+  { label: "Contact", id: "contact", path: "/contact", icon: IoIosArrowForward },
 ];
 
 export const about_text =
