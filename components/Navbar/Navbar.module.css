@@ -64,7 +64,7 @@
   justify-content: center;
   gap: 13px;
   position: relative;
-  background: #f6952e;
+  background: var(--color-primary);
   border: none;
   color: #fff;
   font-size: 14px;
