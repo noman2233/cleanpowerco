@@ -217,3 +217,34 @@ export const services = [
     ),
   },
 ];
+
+
+
+
+// constants/data.js
+export const officeData = [
+  {
+    id: 1,
+    state: "SA",
+    address: "Level 11 147 Pirie St, Adelaide, SA 5000, Australia",
+    status: "OPEN NOW",
+  },
+  {
+    id: 2,
+    state: "VIC",
+    address: "Level. 1/225 Chapel St, Prahan, Victoria 3181, Australia",
+    status: "OPEN NOW",
+  },
+  {
+    id: 3,
+    state: "QLD",
+    address: "Unit 18, 3 Alison st, Surfers Paradise, Gold Coast 4217, Australia",
+    status: "OPEN NOW",
+  },
+  {
+    id: 4,
+    state: "NSW",
+    address: "Regus, 680 George Street, Sydney, NSW, Australia",
+    status: "OPEN NOW",
+  },
+];

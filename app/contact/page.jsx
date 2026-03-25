@@ -5,6 +5,7 @@ import WebLayout from "@/components/layout/WebLayout";
 import Banner from "@/pageComponents/Banner/Banner";
 // Import your component (e.g., a Map or a Motion-heavy form)
 import dynamic from "next/dynamic"; // <--- THIS WAS MISSING
+import OfficeGrid from "@/components/OfficeGrid/OfficeGrid";
 const Contact = dynamic(() => import('../../components/Contact/Contact'), { 
   ssr: false 
 });
@@ -22,7 +23,8 @@ const ContactUs = () => {
           title="Contact"
           bgImage="https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/page-title.jpg"
         />
-        <Contact />
+        <Contact showInfo />
+        <OfficeGrid/>
         <Map />
       </WebLayout>
     </div>
