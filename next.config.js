@@ -7,7 +7,8 @@ const nextConfig = {
       'gepsenergy.com',
       'https://i.ibb.co',
       'i.ibb.co',
-      'img.freepik.com'
+      'img.freepik.com',
+      'images.unsplash.com'
      
     ],
   },

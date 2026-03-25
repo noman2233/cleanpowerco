@@ -6,7 +6,8 @@ import { IoIosArrowForward } from "react-icons/io";
 export const website_email = "admin@cleanpowerco.com.au";
 export const website_phone = "1300976741";
 export const contact_para = "1300976741";
-export const contact_image = "https://img.freepik.com/premium-photo/female-worker-engineer-uniform-is-near-solar-panels_146671-144350.jpg?semt=ais_hybrid&w=740&q=80";
+export const contact_image =
+  "https://img.freepik.com/premium-photo/female-worker-engineer-uniform-is-near-solar-panels_146671-144350.jpg?semt=ais_hybrid&w=740&q=80";
 
 export const MENU_ITEMS = [
   { label: "Home", id: "home", path: "/", icon: IoIosArrowForward },
@@ -88,8 +89,6 @@ export const faqData = [
   },
 ];
 
-
-
 export const services = [
   {
     id: 1,
@@ -159,8 +158,9 @@ export const services = [
     title: "Solar Panel Installation",
     description:
       "Expert installation using premium solar panels for long-term performance. Designed to maximize energy output and reduce your electricity bills.",
-    image:'https://img.freepik.com/premium-vector/two-men-working-roof-with-solar-panels_666353-3989.jpg?semt=ais_hybrid&w=740&q=80',
-     icon: (
+    image:
+      "https://img.freepik.com/premium-vector/two-men-working-roof-with-solar-panels_666353-3989.jpg?semt=ais_hybrid&w=740&q=80",
+    icon: (
       <svg
         width="50"
         height="50"
@@ -175,7 +175,7 @@ export const services = [
     ),
   },
 
-    {
+  {
     id: 5,
     title: "Energy Efficiency Consulting",
     description:
@@ -195,7 +195,8 @@ export const services = [
         <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
       </svg>
     ),
-  },    {
+  },
+  {
     id: 5,
     title: "Solar Maintenance & Repairs",
     description:
@@ -218,9 +219,6 @@ export const services = [
   },
 ];
 
-
-
-
 // constants/data.js
 export const officeData = [
   {
@@ -238,7 +236,8 @@ export const officeData = [
   {
     id: 3,
     state: "QLD",
-    address: "Unit 18, 3 Alison st, Surfers Paradise, Gold Coast 4217, Australia",
+    address:
+      "Unit 18, 3 Alison st, Surfers Paradise, Gold Coast 4217, Australia",
     status: "OPEN NOW",
   },
   {
@@ -246,5 +245,64 @@ export const officeData = [
     state: "NSW",
     address: "Regus, 680 George Street, Sydney, NSW, Australia",
     status: "OPEN NOW",
+  },
+];
+
+export const aboutTabs = [
+  {
+    id: "choose",
+    label: "Why Choose Us",
+    content:
+      "Ontes mauris eget aliquet fermentum venenatis taciti tempus dignssim mollis pharetra class habitant congue pulvinar rhoncus proin bibendum torquent life ultrices penatibus feugiat phasellus.",
+    features: [
+      "Experienced Team of Experts",
+      "Very first Customers Service",
+      "Flexiblity Work Environment",
+      "Provide Quality Service",
+    ],
+  },
+  {
+    id: "mission",
+    label: "Our Mission",
+    content:
+      "Our mission is to lead the world's transition to sustainable energy by providing highly efficient solar and wind solutions tailored for every community.",
+    features: [
+      "Sustainable Energy Focus",
+      "Innovative Tech Solutions",
+      "Global Reach & Impact",
+      "24/7 Support Systems",
+    ],
+  },
+  {
+    id: "goal",
+    label: "Our Goal",
+    content:
+      "We aim to reduce global carbon emissions by 40% over the next decade through accessible and affordable renewable energy installations.",
+    features: [
+      "Zero Carbon Footprint",
+      "Affordable Clean Energy",
+      "Community Empowerment",
+      "Nature Preservation",
+    ],
+  },
+];
+
+
+// constants/data.js
+export const workProcessData = [
+  {
+    id: "01",
+    title: "Project Planning",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800", // Engineer with turbines
+  },
+  {
+    id: "02",
+    title: "Research & Analysis",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800", // Team meeting
+  },
+  {
+    id: "03",
+    title: "Installation & Maintenance",
+    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=800", // Solar/Tech maintenance
   },
 ];
