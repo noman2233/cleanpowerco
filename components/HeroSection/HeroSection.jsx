@@ -76,9 +76,9 @@ const HeroSection = () => {
         <div className={styles.contentWrapper}>
           <span className={styles.tagline}>INSTANT . SIMPLE . EXCELLENCE</span>
           <h1 className={styles.mainTitle}>
-            TURN SOLAR
+            Driving Australia’s 
             <br />
-            INTO POWER
+            Energy Future Forward
           </h1>
           {/* <button className={styles.getStartedBtn}>
             Get Started <HiArrowRight className={styles.arrow} />

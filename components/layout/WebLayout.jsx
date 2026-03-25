@@ -5,13 +5,11 @@ import Footer from "../Footer/Footer";
 import SideMenu from "../SideMenu/SideMenu";
 
 const WebLayout = ({ children }) => {
- 
-
   return (
-    <div  >
+    <div>
       <AnnouncementBar />
       <Navbar />
-      <SideMenu/>
+      <SideMenu />
       {children}
       <Footer />
     </div>
