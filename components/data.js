@@ -23,27 +23,33 @@ export const MENU_ITEMS = [
   //   icon: IoIosArrowForward,
   // },
   { label: "FAQs", id: "faqs", path: "/", icon: IoIosArrowForward },
-  { label: "Contact", id: "contact", path: "/contact", icon: IoIosArrowForward },
+  {
+    label: "Contact",
+    id: "contact",
+    path: "/contact",
+    icon: IoIosArrowForward,
+  },
 ];
 
 export const about_text =
   "AWARD WINING SOLAR COMPANY IN VICTORIA, QLD & SOUTH AUSTRALIA. Clean Power Co prides itself on making solar power accessible to all Australians by making its inception to completion power solutions simple, affordable and dependable to all consumers. Clean Power Co installs an average of 3,000,000 watts of solar each year. Clean Power Co guarantees and backs every system installed with a commitment to its performance and durability. We are always on the look out for new innovative ideas within the industry.";
 
-  export const footer_text='AWARD WINING SOLAR COMPANY IN VICTORIA, QLD & SOUTH AUSTRALIA. Clean Power Co prides itself on making solar power accessible to all Australians by making its inception to completion power solutions simple, affordable and dependable to all consumers.'
+export const footer_text =
+  "Clean Power Co is dedicated to democratizing renewable energy for all Australians. From initial design to final connection, we deliver seamless, cost-effective, and steadfast solar solutions tailored for every home.";
 
 export const testimonialsData = [
   {
     name: "Callum Lissa",
-    role: "Factory Owner",
-    text: "This is simply unbelievable! Solar energy has got everything I need. Solar energy should be nominated for service of the year. I didn't even need training.",
+    role: "Business Owner",
+    text: "Just had my 6kW solar system installed. I’d like to thank Ange for the deal he put together for me on my system which was at least $1500 cheaper than anyone else I spoke to. I’d also like to thank Ross who did a great job",
     image:
       "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/avatar-06.jpg",
     highlighted: false,
   },
   {
-    name: "Bethany Nichols",
+    name: "Shane Nichols",
     role: "General Manager",
-    text: "Wind energy is the most valuable business resource. You won't regret it. I'd be lost without wind energy. Needless to say we are extremely satisfied with the results.",
+    text: "I Bought a micro inverter system. The whole process was very easy start to finish, and I found Frank to be very helpful, brutally honest and not full of BS like the vast majority of solar installers who use cheap sales tactics",
     image:
       "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/avatar-06.jpg",
 
@@ -52,29 +58,31 @@ export const testimonialsData = [
   {
     name: "Lily Hogben",
     role: "Engineer",
-    text: "You won't regret it. Wind energy is the real deal! We've seen amazing results already. I am really satisfied with my wind energy.",
+    text: "I would like to commend clean power co on the recent solar installation at my home. Sam provided me with a prompt & clear documentation and a very fair price. The installation crew Cam and Elliot were a pleasure to deal with",
     image:
       "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/avatar-06.jpg",
     highlighted: false,
   },
 ];
 
-
 // data/faqData.js
 export const faqData = [
   {
     id: 1,
     question: "1. Why we are best company?",
-    answer: "New limit across the sun powered worth chain become important to help the PV market's development. In any case, the capital needed to build up and increase wafer, sun powered cell and sun based module fabricating offices."
+    answer:
+      "New limit across the sun powered worth chain become important to help the PV market's development. In any case, the capital needed to build up and increase wafer, sun powered cell and sun based module fabricating offices.",
   },
   {
     id: 2,
     question: "2. How you can solar energy systems?",
-    answer: "Our expert team handles the entire installation process, from initial site assessment and design to final grid connection, ensuring maximum efficiency for your home or business."
+    answer:
+      "Our expert team handles the entire installation process, from initial site assessment and design to final grid connection, ensuring maximum efficiency for your home or business.",
   },
   {
     id: 3,
     question: "3. Company mission & vision?",
-    answer: "To accelerate the world's transition to sustainable energy by providing accessible, high-quality solar solutions while protecting our natural environment and resources."
-  }
+    answer:
+      "To accelerate the world's transition to sustainable energy by providing accessible, high-quality solar solutions while protecting our natural environment and resources.",
+  },
 ];

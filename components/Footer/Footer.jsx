@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaLocationPin, FaMailchimp, FaPhone } from "react-icons/fa6";
 import styles from "./Footer.module.css";
 import { app_logo, footer_text } from "../data";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 const Footer = () => {
   const data = new Date()?.getFullYear();
@@ -26,16 +27,20 @@ const Footer = () => {
               <h4>Useful Links</h4>
               <ul>
                 <li>
+                  <FaAngleDoubleRight className={styles.forwardIcon} />
+                  <Link href="/about">Services</Link>
+                </li>
+                <li>
+                  <FaAngleDoubleRight className={styles.forwardIcon} />
                   <Link href="/about">About</Link>
                 </li>
                 <li>
+                  <FaAngleDoubleRight className={styles.forwardIcon} />
                   <Link href="/contact">Contact</Link>
                 </li>
                 <li>
-                  <Link href="/return-policy">Return Policy</Link>
-                </li>
-                <li>
-                  <Link href="/shipping-policy">Shipping</Link>
+                  <FaAngleDoubleRight className={styles.forwardIcon} />
+                  <Link href="/faq">Faq's</Link>
                 </li>
               </ul>
             </div>
@@ -44,15 +49,23 @@ const Footer = () => {
               <h4>Services</h4>
               <ul>
                 <li>
+                  <FaAngleDoubleRight className={styles.forwardIcon} />
+
                   <Link href="/features">Solar Solutions</Link>
                 </li>
                 <li>
+                  <FaAngleDoubleRight className={styles.forwardIcon} />
+
                   <Link href="/pricing">Categories</Link>
                 </li>
                 <li>
+                  <FaAngleDoubleRight className={styles.forwardIcon} />
+
                   <Link href="/integrations">Featured Product</Link>
                 </li>
                 <li>
+                  <FaAngleDoubleRight className={styles.forwardIcon} />
+
                   <Link href="/team">Our Team</Link>
                 </li>
               </ul>
@@ -80,7 +93,8 @@ const Footer = () => {
 
         <div className={styles.bottomSection}>
           <p>
-            Copyright @ {data}{""}
+            Copyright @ {data}
+            {""}
             <span className={styles.ownername}>cleanpowerco.com</span> All
             rights reserved.
           </p>
