@@ -1,8 +1,10 @@
 import AboutSection from "@/components/AboutSection/AboutSection";
 import AnnouncementBar from "@/components/AnnouncementBar/AnnouncementBar";
+import Contact from "@/components/Contact/Contact";
 import FaqSection from "@/components/FaqSection/FaqSection";
 import Footer from "@/components/Footer/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import WebLayout from "@/components/layout/WebLayout";
 import LogoSlider from "@/components/LogoSlider/LogoSlider";
 import Navbar from "@/components/Navbar/Navbar";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
@@ -13,16 +15,16 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <AnnouncementBar />
-      <Navbar />
-      <HeroSection />
-      <LogoSlider />
-      <ServicesSection />
-      <AboutSection />
-      <WhyChooseUs />
-      <FaqSection />
-      <Testimonials />
-      <Footer />
+      <WebLayout>
+        <HeroSection />
+        <LogoSlider />
+        <ServicesSection />
+        <AboutSection />
+        <WhyChooseUs />
+        <FaqSection />
+        <Testimonials />
+        <Contact showImage />
+      </WebLayout>
     </div>
   );
 };

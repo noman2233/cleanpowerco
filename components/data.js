@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 export const website_email = "admin@cleanpowerco.com.au";
 export const website_phone = "1300976741";
 export const contact_para = "1300976741";
+export const contact_image = "https://img.freepik.com/premium-photo/female-worker-engineer-uniform-is-near-solar-panels_146671-144350.jpg?semt=ais_hybrid&w=740&q=80";
 
 export const MENU_ITEMS = [
   { label: "Home", id: "home", path: "/", icon: IoIosArrowForward },
@@ -48,19 +49,19 @@ export const testimonialsData = [
   },
   {
     name: "Shane Nichols",
-    role: "General Manager",
+    role: "Accounts Manager",
     text: "I Bought a micro inverter system. The whole process was very easy start to finish, and I found Frank to be very helpful, brutally honest and not full of BS like the vast majority of solar installers who use cheap sales tactics",
     image:
-      "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/avatar-06.jpg",
+      "https://img.freepik.com/free-photo/cheerful-guy-enjoying-outdoor-coffee-break_1262-20005.jpg",
 
     highlighted: true,
   },
   {
     name: "Lily Hogben",
-    role: "Engineer",
+    role: "IT Consultant",
     text: "I would like to commend clean power co on the recent solar installation at my home. Sam provided me with a prompt & clear documentation and a very fair price. The installation crew Cam and Elliot were a pleasure to deal with",
     image:
-      "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/avatar-06.jpg",
+      "https://img.freepik.com/free-photo/confident-skilled-entrepreneur-seated-her-corporate-office-desk_482257-123681.jpg?semt=ais_hybrid&w=740&q=80",
     highlighted: false,
   },
 ];

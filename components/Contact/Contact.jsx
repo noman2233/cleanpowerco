@@ -8,11 +8,12 @@ import { ToastContainer } from "react-toastify";
 import { toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import InputComponent from "../inputComponent/InputComponent";
-import { website_email, website_phone } from "../data";
-import { MdOutlineMarkEmailRead ,MdOutlinePhonelinkRing} from "react-icons/md";
- import { IoLocationOutline } from "react-icons/io5";
+import { contact_image, website_email, website_phone } from "../data";
+import { MdOutlineMarkEmailRead, MdOutlinePhonelinkRing } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+import Image from "next/image";
 
-const Contact = () => {
+const Contact = ({ showImage, showInfo }) => {
   // ✅ Validation Schema
   const SignInSchema = Yup.object().shape({
     username: Yup.string().required("Required"),
@@ -91,52 +92,67 @@ const Contact = () => {
         theme="light"
         transition={Bounce}
       />
+      <div className={styles.header}>
+        <span className={styles.subtitle}>Contact Us.</span>
+        <h2 className={styles.title}>Get In Touch With Us </h2>
+      </div>
       <section className={styles.contactSection}>
         <div className={styles.contactContainer}>
-          <div className={styles.contactInfo}>
-            <h4 className={styles.contactSubtitle}>Contact Us</h4>
-            <h1 className={styles.contactTitle}>
-              Get in touch with us
-            </h1>
+          {showInfo && (
+            <div className={styles.contactInfo}>
+              <h4 className={styles.contactSubtitle}>Contact Us</h4>
+              <h1 className={styles.contactTitle}>Get in touch with us</h1>
 
-            <div className={styles.contactDetails}>
-              <div className={styles.contactItem}>
-                <div className={styles.iconCircle}>
-                  <MdOutlinePhonelinkRing className={styles.icon_contact} />
+              <div className={styles.contactDetails}>
+                <div className={styles.contactItem}>
+                  <div className={styles.iconCircle}>
+                    <MdOutlinePhonelinkRing className={styles.icon_contact} />
+                  </div>
+                  <div>
+                    <h3>Phone Number</h3>
+                    <p className={styles.contactForm_para}>{website_phone}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3>Phone Number</h3>
-                  <p className={styles.contactForm_para}>{website_phone}</p>
-                </div>
-              </div>
 
-              <div className={styles.contactItem}>
-                <div className={styles.iconCircle}>
-                  <MdOutlineMarkEmailRead className={styles.icon_contact} />
+                <div className={styles.contactItem}>
+                  <div className={styles.iconCircle}>
+                    <MdOutlineMarkEmailRead className={styles.icon_contact} />
+                  </div>
+                  <div>
+                    <h3>E-Mail</h3>
+                    <a
+                      href={`mailto:${website_email}`}
+                      // className={styles.emailLink}
+                      // className={styles.contactForm_para}
+                    >
+                      <p className={styles.contactForm_para}>{website_email}</p>
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <h3>E-Mail</h3>
-                  <a
-                    href={`mailto:${website_email}`}
-                    // className={styles.emailLink}
-                    // className={styles.contactForm_para}
-                  >
-                    <p className={styles.contactForm_para}>{website_email}</p>
-                  </a>
-                </div>
-              </div>
 
-              <div className={styles.contactItem}>
-                <div className={styles.iconCircle}>
-                  <IoLocationOutline className={styles.icon_contact} />
-                </div>
-                <div>
-                  <h3>Address</h3>
-                  <p className={styles.contactForm_para}>{website_phone}</p>
+                <div className={styles.contactItem}>
+                  <div className={styles.iconCircle}>
+                    <IoLocationOutline className={styles.icon_contact} />
+                  </div>
+                  <div>
+                    <h3>Address</h3>
+                    <p className={styles.contactForm_para}>{website_phone}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
+          {showImage && (
+            <div className={styles.imageContainer}>
+              <Image
+                src={contact_image}
+                alt="Contact Us"
+                width={500}
+                height={500} // ✅ Provide a realistic height
+                className={styles.contact_image}
+              />
+            </div>
+          )}
 
           {/* Right Form Side */}
           <div className={styles.contactForm}>
