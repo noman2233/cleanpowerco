@@ -1,10 +1,18 @@
 "use client";
 
 import React from "react";
-import Contact from "../../components/Contact/Contact";
 import WebLayout from "@/components/layout/WebLayout";
-import Map from "@/components/Map/Map";
 import Banner from "@/pageComponents/Banner/Banner";
+// Import your component (e.g., a Map or a Motion-heavy form)
+import dynamic from "next/dynamic"; // <--- THIS WAS MISSING
+const Contact = dynamic(() => import('../../components/Contact/Contact'), { 
+  ssr: false 
+});
+
+const Map = dynamic(() => import('@/components/Map/Map'), { 
+  ssr: false,
+  loading: () => <p>Loading Map...</p> 
+});
 
 const ContactUs = () => {
   return (
