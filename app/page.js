@@ -11,6 +11,7 @@ import ServicesSection from "@/components/ServicesSection/ServicesSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import React from "react";
+import { services } from "@/components/data";
 
 const page = () => {
   return (
@@ -18,7 +19,7 @@ const page = () => {
       <WebLayout>
         <HeroSection />
         <LogoSlider />
-        <ServicesSection />
+        <ServicesSection services={services?.slice(0,3)} />
         <AboutSection />
         <WhyChooseUs />
         <FaqSection />

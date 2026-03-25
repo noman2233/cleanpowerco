@@ -96,12 +96,10 @@
   cursor: pointer;
 }
 
-/* Theme Toggle */
 .themeSection {
   padding: 0 24px 30px;
 }
 .label {
-  /* font-family: var(--font-family-serif); */
   font-size: 15px;
   font-weight: 700;
   color: white;

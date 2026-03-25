@@ -87,3 +87,133 @@ export const faqData = [
       "To accelerate the world's transition to sustainable energy by providing accessible, high-quality solar solutions while protecting our natural environment and resources.",
   },
 ];
+
+
+
+export const services = [
+  {
+    id: 1,
+    title: "Solar System Design",
+    description:
+      "Customized system design based on your energy needs and roof space. Optimized for maximum efficiency and return on investment.",
+    image:
+      "https://img.freepik.com/free-photo/foreman-businessman-solar-energy-station_1157-35687.jpg?semt=ais_hybrid&w=740&q=80",
+    icon: (
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
+        <rect x="3" y="10" width="18" height="11" rx="1" />
+        <path d="M7 10v11M12 10v11M17 10v11M3 15h18M3 10l9-7 9 7" />
+      </svg>
+    ),
+  },
+  {
+    id: 2,
+    title: "Residential Solar Systems",
+    description:
+      "Tailored solar solutions built specifically for modern homes. Lower your energy costs while increasing property value.",
+    image:
+      "https://img.freepik.com/premium-photo/private-home-roof-covered-with-solar-photovoltaic-panels-generating-clean-ecological-electric-energy-suburban-rural-town-area-concept-autonomous-house_127089-20920.jpg",
+    icon: (
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
+        <path d="M12 12L12 22M12 12L18 8M12 12L6 8" strokeLinecap="round" />
+        <circle cx="12" cy="12" r="2" fill="white" />
+      </svg>
+    ),
+  },
+  {
+    id: 3,
+    title: "Commercial Solar Solutions",
+    description:
+      "Efficient solar systems designed for businesses of all sizes.Cut operational costs and move towards sustainable energy.",
+    image:
+      "https://i.ibb.co/qLTZF2jR/aerial-shot-industrial-buildings-bristol-england.jpg",
+    icon: (
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
+        <path d="M9 18h6M10 22h4M12 2v3M5 8l2 2M19 8l-2 2" />
+        <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
+      </svg>
+    ),
+  },
+  {
+    id: 4,
+    title: "Solar Panel Installation",
+    description:
+      "Expert installation using premium solar panels for long-term performance. Designed to maximize energy output and reduce your electricity bills.",
+    image:'https://img.freepik.com/premium-vector/two-men-working-roof-with-solar-panels_666353-3989.jpg?semt=ais_hybrid&w=740&q=80',
+     icon: (
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
+        <path d="M9 18h6M10 22h4M12 2v3M5 8l2 2M19 8l-2 2" />
+        <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
+      </svg>
+    ),
+  },
+
+    {
+    id: 5,
+    title: "Energy Efficiency Consulting",
+    description:
+      "Expert guidance to optimize your energy consumption.Maximize savings with smarter energy usage strategies.",
+    image:
+      "https://img.freepik.com/premium-photo/engineer-with-solar-panel-explaining-colleague-tablet-office_1270664-3684.jpg?semt=ais_hybrid&w=740&q=80",
+    icon: (
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
+        <path d="M9 18h6M10 22h4M12 2v3M5 8l2 2M19 8l-2 2" />
+        <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
+      </svg>
+    ),
+  },    {
+    id: 5,
+    title: "Solar Maintenance & Repairs",
+    description:
+      "Routine maintenance to keep your system running smoothly.Fast and reliable repairs to ensure consistent performance.",
+    image:
+      "https://img.freepik.com/premium-photo/african-american-worker-cleaning-solar-panel-solar-power-plant_255667-58646.jpg",
+    icon: (
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
+        <path d="M9 18h6M10 22h4M12 2v3M5 8l2 2M19 8l-2 2" />
+        <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
+      </svg>
+    ),
+  },
+];

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './WhyChooseUs.module.css';
 
+
 const WhyChooseUs = () => {
   const features = [
     "Commercialization of ready to deploy renewable.",
@@ -50,6 +51,21 @@ const WhyChooseUs = () => {
           <h2 className={styles.title}>
             We’re develop & create solar systems
           </h2>
+          {/* <SplitText
+  text="We’re develop & create solar systems"
+  className="text-2xl font-semibold text-center"
+  delay={50}
+  duration={1.25}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  // onLetterAnimationComplete={handleAnimationComplete}
+  showCallback
+/> */}
 
           <div className={styles.mainFeature}>
             <div className={styles.iconCircle}>
