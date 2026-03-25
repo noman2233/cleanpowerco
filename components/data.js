@@ -293,16 +293,16 @@ export const workProcessData = [
   {
     id: "01",
     title: "Project Planning",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800", // Engineer with turbines
+    image: "https://img.freepik.com/free-photo/side-view-engineer-drawing-plan-outdoors_23-2149352262.jpg?semt=ais_hybrid&w=740&q=80", // Engineer with turbines
   },
   {
     id: "02",
     title: "Research & Analysis",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800", // Team meeting
+    image: "https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg?semt=ais_hybrid&w=740&q=80", // Team meeting
   },
   {
     id: "03",
     title: "Installation & Maintenance",
-    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=800", // Solar/Tech maintenance
+    image: "https://img.freepik.com/free-photo/solar-panel-installation-rooftop_23-2152021003.jpg", // Solar/Tech maintenance
   },
 ];
