@@ -1,6 +1,6 @@
 import { Poppins, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-const PlusJakartaSans = Plus_Jakarta_Sans({
+const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["400", "500", "600", "700", "800"], // Bebas Neue only has 400 weight
   subsets: ["latin"],
   display: "swap",
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${PlusJakartaSans.variable}     ${poppins.variable}`}
+      className={`${plusJakartaSans.variable} ${poppins.variable}`}
     >
       <body>{children}</body>
     </html>

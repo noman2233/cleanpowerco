@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { FaLocationPin, FaMailchimp, FaPhone } from "react-icons/fa6";
 import styles from "./Footer.module.css";
-import { app_logo, footer_text } from "../data";
+import { app_logo, footer_text, website_email, website_phone } from "../data";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { IoLocationOutline, IoMailOpenOutline, IoPhonePortraitOutline } from "react-icons/io5";
 
 const Footer = () => {
   const data = new Date()?.getFullYear();
@@ -14,8 +15,7 @@ const Footer = () => {
           <div className={styles.brandColumn}>
             <Link href="/" className={styles.logoLink}>
               <div className={styles.logo}>
-                {/* Ensure app_logo is defined or replace with a string path */}
-                <img src={app_logo} alt="Logo" className={styles.applogo} />
+                 <img src={app_logo} alt="Logo" className={styles.applogo} />
               </div>
             </Link>
 
@@ -75,16 +75,16 @@ const Footer = () => {
               <h4>Contact us</h4>
               <div className={styles.contactList}>
                 <div className={styles.footerContact}>
-                  <FaLocationPin className={styles.iconLocation} />
+                  <IoLocationOutline className={styles.iconLocation} />
                   <p>Office 1405 92 Castle Street, Ireland</p>
                 </div>
                 <div className={styles.footerContact}>
-                  <FaMailchimp className={styles.iconLocation} />
-                  <p>contact@career.co.uk</p>
+                  <IoMailOpenOutline className={styles.iconLocation} />
+                  <p>{website_email}</p>
                 </div>
                 <div className={styles.footerContact}>
-                  <FaPhone className={styles.iconLocation} />
-                  <p>+9203246773140</p>
+                  <IoPhonePortraitOutline className={styles.iconLocation} />
+                  <p>{website_phone}</p>
                 </div>
               </div>
             </div>

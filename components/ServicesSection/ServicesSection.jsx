@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./ServicesSection.module.css";
 import { motion } from "framer-motion";
+import SplitText from "../animatedComponents/SplitText/SplitText";
 
  
 const ServicesSection = ({ services }) => {
@@ -10,7 +11,21 @@ const ServicesSection = ({ services }) => {
     <section className={styles.container}>
       <div className={styles.header}>
         <p className={styles.subtitle}>OUR SERVICES.</p>
-        <h2 className={styles.title}>We Offer Different Services</h2>
+        {/* <h2 className={styles.title}></h2> */}
+           <SplitText
+            text="We Offer Different Services"
+            className={styles.title}
+            delay={50}
+            duration={1.25}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+             showCallback
+          />
       </div>
 
       <div className={styles.grid}>

@@ -14,12 +14,11 @@
   gap: 40px;
 }
 
-/* IMAGE GALLERY STYLING */
 .imageGallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  height: 450px; /* Base height for mobile/small tablet */
+  height: 450px; 
 }
 
 .leftColumn {
@@ -43,7 +42,6 @@
   object-fit: cover;
 }
 
-/* CONTENT STYLING */
 .subtitle {
   color: #e2cc45;
   font-weight: 700;
@@ -62,6 +60,7 @@
 
 .mainFeature {
   display: flex;
+  align-items: center;
   gap: 20px;
   margin-bottom: 40px;
 }
@@ -145,7 +144,7 @@
   }
 
   .imageGallery {
-    flex: 1.2; /* Takes more space for images */
+    flex: 1.2;  
     height: 650px;
   }
 

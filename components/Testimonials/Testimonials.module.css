@@ -2,7 +2,6 @@
   padding: 80px 20px;
   background-color: #ffffff;
   text-align: center;
-  /* Background world map image can be added here */
   background-image: url('https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/map.png');
   background-size: contain;
   background-position: center;
@@ -11,13 +10,19 @@
 
 .header {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subtitle {
-  color: #e2cc45; /* Gold accent */
+  color: #e2cc45;  
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
+  text-align: center;
+  
 }
 
 .title {
@@ -29,7 +34,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr; /* Mobile default */
+  grid-template-columns: 1fr;  
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -50,7 +55,7 @@
 }
 
 .greenCard {
-  background-color: #27a770; /* Primary Green */
+  background-color: #27a770;  
   color: #ffffff;
 }
 

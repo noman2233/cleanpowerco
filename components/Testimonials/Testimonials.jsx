@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FaQuoteLeft } from 'react-icons/fa';
 import styles from './Testimonials.module.css';
 import { testimonialsData } from '../data';
+import SplitText from '../animatedComponents/SplitText/SplitText';
 
  
 const Testimonials = () => {
@@ -10,7 +11,23 @@ const Testimonials = () => {
     <section className={styles.testimonialsSection}>
       <div className={styles.header}>
         <span className={styles.subtitle}>OUR TESTIMONIALS.</span>
-        <h2 className={styles.title}>What Our Clients Says</h2>
+        {/* <h2 className={styles.title}>What Our Clients Says</h2> */}
+
+            <SplitText
+            text="What Our Clients Says"
+            className={styles.title}
+            delay={50}
+            duration={1.25}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+             showCallback
+          />
+
       </div>
 
       <div className={styles.grid}>

@@ -12,6 +12,7 @@ import { contact_image, website_email, website_phone } from "../data";
 import { MdOutlineMarkEmailRead, MdOutlinePhonelinkRing } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import Image from "next/image";
+import SplitText from "../animatedComponents/SplitText/SplitText";
 
 const Contact = ({ showImage, showInfo }) => {
   // ✅ Validation Schema
@@ -94,7 +95,22 @@ const Contact = ({ showImage, showInfo }) => {
       />
       <div className={styles.header}>
         <span className={styles.subtitle}>Contact Us.</span>
-        <h2 className={styles.title}>Get In Touch With Us </h2>
+        {/* <h2 className={styles.title}>Get In Touch With Us </h2> */}
+
+            <SplitText
+            text="Get In Touch With Us"
+            className={styles.title}
+            delay={50}
+            duration={1.25}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+             showCallback
+          />
       </div>
       <section className={styles.contactSection}>
         <div className={styles.contactContainer}>

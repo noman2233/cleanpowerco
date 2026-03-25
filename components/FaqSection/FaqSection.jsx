@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import styles from "./FaqSection.module.css";
 import { faqData } from "../data";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import SplitText from "../animatedComponents/SplitText/SplitText";
 
 const FaqSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,7 +22,23 @@ const FaqSection = () => {
         {/* Left Side: Content */}
         <div className={styles.contentSide}>
           <span className={styles.subHeading}>Home Service</span>
-          <h2 className={styles.mainHeading}>Have Any Questions?</h2>
+          {/* <h2 className={styles.mainHeading}>Have Any Questions?</h2> */}
+
+            <SplitText
+            text="Have Any Questions?"
+            className={styles.mainHeading}
+            delay={50}
+            duration={1.25}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="left"
+             showCallback
+          />
+
 
           <ul className={styles.featureList}>
             {features.map((item, index) => (

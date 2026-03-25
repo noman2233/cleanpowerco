@@ -13,10 +13,9 @@
 
  
   /* ✍️ Fonts */
-  --font-body: var(--font-space-grotesk), sans-serif;
-  --font-text: var(--font-space-grotesk), sans-serif;
-  --font-heading: var(--font-bebas-neue), sans-serif;
+ 
   --font-poppins: var(--font-poppins), sans-serif;
+  --font-jakarta: var(--font-jakarta), sans-serif;
  
 }
 
@@ -25,7 +24,9 @@ body {
   color: var(--color-dark);
   margin: 0;
   padding: 0;
-  font-family: var(--font-jakarta);
+  /* font-family: var(--font-jakarta) !important; */
+    font-family: "Plus Jakarta Sans", sans-serif;
+
 }
 
 
