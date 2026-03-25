@@ -6,6 +6,7 @@ const nextConfig = {
       "cdn.shopify.com",
       'gepsenergy.com',
       'https://i.ibb.co',
+      'i.ibb.co',
       'img.freepik.com'
      
     ],

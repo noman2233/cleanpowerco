@@ -7,6 +7,7 @@ import { HiOutlineShieldCheck, HiOutlineLightningBolt } from "react-icons/hi";
 import { BiLeaf } from "react-icons/bi";
 import { HiArrowRight } from "react-icons/hi2";
 import styles from "./HeroSection.module.css";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 const bgImages = [
   "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/slide-04.jpg",
@@ -79,9 +80,10 @@ const HeroSection = () => {
             <br />
             INTO POWER
           </h1>
-          <button className={styles.getStartedBtn}>
+          {/* <button className={styles.getStartedBtn}>
             Get Started <HiArrowRight className={styles.arrow} />
-          </button>
+          </button> */}
+          <ButtonComponent title="Get Started " />
         </div>
       </section>
       <div className={styles.cardSection}>

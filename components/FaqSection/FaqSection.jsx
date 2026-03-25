@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./FaqSection.module.css";
 import { faqData } from "../data";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 const FaqSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -31,7 +32,7 @@ const FaqSection = () => {
             ))}
           </ul>
 
-          <button className={styles.viewMoreBtn}>View Services</button>
+          <ButtonComponent title="View Services" />
         </div>
 
         {/* Right Side: Accordion */}
