@@ -2,10 +2,9 @@ import React from "react"; // Add this line
  import { FiX } from "react-icons/fi";
 import styles from "./newsidemenu.module.css";
 import { motion } from "framer-motion";
-import { CgLogIn } from "react-icons/cg";
 import { app_logo, MENU_ITEMS } from "../data";
 import Link from "next/link";
-import { BiPhone, BiPhoneCall } from "react-icons/bi";
+import { BiPhoneCall } from "react-icons/bi";
 
  
 const SideMenu = ({ isMenuOpen, setIsMenuOpen }) => {
@@ -19,7 +18,6 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }) => {
       <motion.div
         className={`${styles.sideMenu} ${isMenuOpen ? styles.open : ""}`}
       >
-        {/* Header */}
         <div className={styles.header}>
           <div className={styles.userInfo}>
             <div className={styles.avatarWrapper}>
@@ -39,26 +37,21 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }) => {
           </button>
         </div>
 
-        {/* Navigation */}
         <nav className={styles.navLinks}>
        
           {MENU_ITEMS.map((item) => {
-            // 1. Determine if this is a separate page (like /about or /dashboard)
             const isExternalPage = item.path !== "/";
 
             return (
               <Link
                 key={item?.label}
-                // If it's an external page, use the path. If it's a scroll section, keep it at "/"
                 href={item?.path}
                 className={styles.navItem}
                 onClick={(e) => {
                   if (!isExternalPage) {
-                    // 2. Only prevent default and scroll if it's a section on the same page
                     e.preventDefault();
                     scrollToSection(item.id);
                   }
-                  // Always close the menu regardless of the link type
                   setIsMenuOpen(false);
                 }}
               >

@@ -58,3 +58,23 @@ export const testimonialsData = [
     highlighted: false,
   },
 ];
+
+
+// data/faqData.js
+export const faqData = [
+  {
+    id: 1,
+    question: "1. Why we are best company?",
+    answer: "New limit across the sun powered worth chain become important to help the PV market's development. In any case, the capital needed to build up and increase wafer, sun powered cell and sun based module fabricating offices."
+  },
+  {
+    id: 2,
+    question: "2. How you can solar energy systems?",
+    answer: "Our expert team handles the entire installation process, from initial site assessment and design to final grid connection, ensuring maximum efficiency for your home or business."
+  },
+  {
+    id: 3,
+    question: "3. Company mission & vision?",
+    answer: "To accelerate the world's transition to sustainable energy by providing accessible, high-quality solar solutions while protecting our natural environment and resources."
+  }
+];

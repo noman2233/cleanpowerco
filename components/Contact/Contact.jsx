@@ -93,7 +93,6 @@ const Contact = () => {
       />
       <section className={styles.contactSection}>
         <div className={styles.contactContainer}>
-          {/* Left Info Side */}
           <div className={styles.contactInfo}>
             <h4 className={styles.contactSubtitle}>Contact Us</h4>
             <h1 className={styles.contactTitle}>

@@ -80,9 +80,9 @@ const Footer = () => {
 
         <div className={styles.bottomSection}>
           <p>
-            {" "}
-            @ {data} <span className={styles.ownername}>cleanpowerco.com</span>{" "}
-            All rights reserved.
+            Copyright @ {data}{""}
+            <span className={styles.ownername}>cleanpowerco.com</span> All
+            rights reserved.
           </p>
           <div className={styles.legalLinks}>
             <Link href="/privacy-policy">Privacy Policy</Link>
