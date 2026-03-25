@@ -5,7 +5,8 @@ const nextConfig = {
       "encrypted-tbn0.gstatic.com",
       "cdn.shopify.com",
       'gepsenergy.com',
-      'https://i.ibb.co'
+      'https://i.ibb.co',
+      'img.freepik.com'
      
     ],
   },

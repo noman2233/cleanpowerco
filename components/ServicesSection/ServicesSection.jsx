@@ -1,44 +1,73 @@
-import React from 'react';
-import Image from 'next/image';
-import styles from './ServicesSection.module.css';
+import React from "react";
+import Image from "next/image";
+import styles from "./ServicesSection.module.css";
 
 const services = [
   {
     id: 1,
-    title: "Solar Solutions",
-    description: "An ideal mix of involvement and skill to further our focus on technology.",
-    image: "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/services-1.jpg",
+    title: "Solar System Design",
+    description:
+      "Customized system design based on your energy needs and roof space. Optimized for maximum efficiency and return on investment.",
+    image:
+      "https://img.freepik.com/free-photo/foreman-businessman-solar-energy-station_1157-35687.jpg?semt=ais_hybrid&w=740&q=80",
     icon: (
-      <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
         <rect x="3" y="10" width="18" height="11" rx="1" />
         <path d="M7 10v11M12 10v11M17 10v11M3 15h18M3 10l9-7 9 7" />
       </svg>
-    )
+    ),
   },
   {
     id: 2,
-    title: "Wind Turbine",
-    description: "An ideal mix of involvement and skill to further our focus on technology.",
-    image: "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/services-2.jpg",
+    title: "Residential Solar Systems",
+    description:
+      "Tailored solar solutions built specifically for modern homes. Lower your energy costs while increasing property value.",
+    image:
+      "https://img.freepik.com/premium-photo/private-home-roof-covered-with-solar-photovoltaic-panels-generating-clean-ecological-electric-energy-suburban-rural-town-area-concept-autonomous-house_127089-20920.jpg",
     icon: (
-      <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
         <path d="M12 12L12 22M12 12L18 8M12 12L6 8" strokeLinecap="round" />
         <circle cx="12" cy="12" r="2" fill="white" />
       </svg>
-    )
+    ),
   },
   {
     id: 3,
-    title: "Renewable Energy",
-    description: "An ideal mix of involvement and skill to further our focus on technology.",
-    image: "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/services-3.jpg",
+    title: "Commercial Solar Solutions",
+    description:
+      "Efficient solar systems designed for businesses of all sizes.Cut operational costs and move towards sustainable energy.",
+    image:
+      "https://i.ibb.co/qLTZF2jR/aerial-shot-industrial-buildings-bristol-england.jpg",
     icon: (
-      <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="1.5"
+      >
         <path d="M9 18h6M10 22h4M12 2v3M5 8l2 2M19 8l-2 2" />
         <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
       </svg>
-    )
-  }
+    ),
+  },
+
+  
 ];
 
 const ServicesSection = () => {
@@ -54,16 +83,14 @@ const ServicesSection = () => {
           <div key={service.id} className={styles.card}>
             {/* Image Section */}
             <div className={styles.imageWrapper}>
-              <Image 
-                src={service.image} 
-                alt={service.title} 
-                fill 
+              <Image
+                src={service.image}
+                alt={service.title}
+                fill
                 className={styles.objectCover}
               />
               {/* Overlapping Green Icon Box */}
-              <div className={styles.iconBox}>
-                {service.icon}
-              </div>
+              <div className={styles.iconBox}>{service.icon}</div>
             </div>
 
             {/* Content Section */}

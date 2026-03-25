@@ -1,6 +1,5 @@
 import AboutSection from "@/components/AboutSection/AboutSection";
 import AnnouncementBar from "@/components/AnnouncementBar/AnnouncementBar";
-import Contact from "@/components/Contact/Contact";
 import FaqSection from "@/components/FaqSection/FaqSection";
 import Footer from "@/components/Footer/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
@@ -23,7 +22,6 @@ const page = () => {
       <WhyChooseUs />
       <FaqSection />
       <Testimonials />
-      <Contact/>
       <Footer />
     </div>
   );
