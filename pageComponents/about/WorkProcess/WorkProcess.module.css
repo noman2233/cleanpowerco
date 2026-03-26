@@ -50,6 +50,8 @@
   color: #666;
   line-height: 1.7;
   font-size: 15px;
+    will-change: transform;
+
 }
 
 /* Grid & Card Styling */
@@ -61,6 +63,8 @@
 
 .card {
   width: 100%;
+  will-change: transform, opacity;
+  transition: box-shadow 0.3s ease;
 }
 
 .imageContainer {
@@ -79,6 +83,7 @@
 
 .card:hover .image {
   transform: scale(1.1);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.08);
 }
 
 .numberBadge {
