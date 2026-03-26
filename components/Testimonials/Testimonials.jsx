@@ -106,6 +106,8 @@ const cardVariants = {
   },
 };
 
+
+
 const Testimonials = () => {
   return (
     <section className={styles.testimonialsSection}>

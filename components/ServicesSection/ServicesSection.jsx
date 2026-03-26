@@ -79,23 +79,40 @@ const containerVariants = {
   },
 };
 
-/* 🔥 Card animation (smooth slide-up) */
 const cardVariants = {
   hidden: {
     opacity: 0,
-    y: 60,
-    scale: 0.95,
+    y: 100,        
+    scale: 0.93,    
   },
   visible: {
     opacity: 1,
     y: 0,
     scale: 1,
     transition: {
-      duration: 0.6,
-      ease: [0.25, 0.1, 0.25, 1], // smooth modern easing
+      duration: 0.7,
+      ease: [0.25, 0.1, 0.25, 1],
     },
   },
 };
+
+/* 🔥 Card animation (smooth slide-up) */
+// const cardVariants = {
+//   hidden: {
+//     opacity: 0,
+//     y: 60,
+//     scale: 0.95,
+//   },
+//   visible: {
+//     opacity: 1,
+//     y: 0,
+//     scale: 1,
+//     transition: {
+//       duration: 0.6,
+//       ease: [0.25, 0.1, 0.25, 1], // smooth modern easing
+//     },
+//   },
+// };
 
 const ServicesSection = ({ services }) => {
   return (
@@ -126,7 +143,7 @@ const ServicesSection = ({ services }) => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true ,amount:0.1}}
       >
         {services.map((service) => (
           <motion.div
@@ -135,7 +152,7 @@ const ServicesSection = ({ services }) => {
             variants={cardVariants}
             whileHover={{ y: -8, scale: 1.02 }}
             transition={{ type: "spring", stiffness: 200 }}
-            viewport={{ once: true, margin: "-50px" }}
+            // viewport={{ once: true, margin: "-50px" }}
           >
             {/* IMAGE */}
     <Link
@@ -152,7 +169,6 @@ const ServicesSection = ({ services }) => {
               <div className={styles.iconBox}>{service.icon}</div>
             </div>
 
-            {/* CONTENT */}
             <div className={styles.cardBody}>
               <div className={styles.textContainer}>
                 <h3 className={styles.cardTitle}>{service.title}</h3>

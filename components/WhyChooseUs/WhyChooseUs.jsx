@@ -1,8 +1,10 @@
+
+"use client"
 import React from "react";
 import Image from "next/image";
 import styles from "./WhyChooseUs.module.css";
 import SplitText from "../animatedComponents/SplitText/SplitText";
-
+import {motion} from "framer-motion"
 const WhyChooseUs = () => {
   const features = [
     "Commercialization of ready to deploy renewable.",
@@ -11,43 +13,84 @@ const WhyChooseUs = () => {
     "Help secure the climate and support its normal assets.",
   ];
 
+  const zoomVariants = {
+ 
+    hidden: {
+    opacity: 0,
+    scale: 0.3,   
+    y: 40,
+    filter: "blur(10px)",
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 1.8,
+      ease: [0.22, 1, 0.36, 1], 
+    },
+  },
+};
+
   return (
     <section className={styles.container}>
       <div className={styles.wrapper}>
-        {/* Left Side: Asymmetric Image Grid */}
         <div className={styles.imageGallery}>
           <div className={styles.leftColumn}>
-            <div className={styles.imgBoxSmall}>
+          
+              <motion.div
+              className={styles.imgBoxSmall}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }} 
+              variants={zoomVariants}
+            >
               <Image
                 src="https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/why-choose-04.jpg"
                 alt="Solar Panel Installation"
                 fill
                 className={styles.objectCover}
               />
-            </div>
-            <div className={styles.imgBoxSmall}>
+            </motion.div>
+        <motion.div
+              className={styles.imgBoxSmall}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={zoomVariants}
+              transition={{ delay: 0.2, ...zoomVariants.visible.transition }}
+            >
               <Image
                 src="https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/why-choose-05.jpg"
                 alt="Renewable Energy Planning"
                 fill
                 className={styles.objectCover}
               />
-            </div>
+            </motion.div>
           </div>
-          <div className={styles.rightColumn}>
+          {/* <div className={styles.rightColumn}> */}
+          <motion.div
+              className={styles.rightColumn} // Ensure this has dimensions in CSS
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={zoomVariants}
+              // Stagger delay for the tall image
+              transition={{ delay: 0.4, ...zoomVariants.visible.transition }}
+            > 
+          
             <Image
               src="https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/why-choose-06.jpg"
               alt="Wind Turbine Landscape"
               fill
               className={styles.objectCover}
             />
-          </div>
+          </motion.div>
         </div>
 
-        {/* Right Side: Information Content */}
         <div className={styles.content}>
           <p className={styles.subtitle}>WHY CHOOSE US.</p>
-          {/* <h2 className={styles.title}>We’re develop & create solar systems</h2> */}
           <SplitText
             text="We’re develop & create solar systems"
             className={styles.title}
@@ -60,7 +103,6 @@ const WhyChooseUs = () => {
             threshold={0.1}
             rootMargin="-100px"
             textAlign="left"
-            // onLetterAnimationComplete={handleAnimationComplete}
             showCallback
           />
 

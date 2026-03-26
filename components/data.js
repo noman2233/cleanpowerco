@@ -486,8 +486,7 @@ export const workProcessData = [
 export const slides = [
   {
     image:
-      "https://img.freepik.com/free-photo/two-asian-young-engineers-walking-along-rows-photovoltaic-panels-solar-farm-they-use-laptop-computer-talking-together_1150-57228.jpg?semt=ais_hybrid&w=740&q=80",
-    tagline: "INSTANT . SIMPLE . EXCELLENCE",
+"https://i.ibb.co/ZwHqn8b/slider-h1-1.webp",    tagline: "INSTANT . SIMPLE . EXCELLENCE",
     title: (
       <>
         Driving Australia’s <br /> Energy Future Forward
