@@ -39,7 +39,7 @@ const AboutSection = () => {
               Save The Environment
             </h2> */}
             <SplitText
-              text="Produce Your Own Clean. Save The Environment
+              text="Make Your Own Energy. Save The Environment
 "
               className={styles.mainTitle}
               delay={50}
@@ -94,7 +94,7 @@ const AboutSection = () => {
             </div>
 
             <div className={styles.footerActions}>
-              <ButtonComponent title="View Services" />
+              <ButtonComponent title="View Services" href="/services" />
             </div>
           </div>
         </div>

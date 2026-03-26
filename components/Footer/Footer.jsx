@@ -51,22 +51,22 @@ const Footer = () => {
                 <li>
                   <FaAngleDoubleRight className={styles.forwardIcon} />
 
-                  <Link href="/features">Solar Solutions</Link>
+                  <Link href="/services">Solar Solutions</Link>
                 </li>
                 <li>
                   <FaAngleDoubleRight className={styles.forwardIcon} />
 
-                  <Link href="/pricing">Categories</Link>
+                  <Link href="/services">Solar System Design</Link>
                 </li>
                 <li>
                   <FaAngleDoubleRight className={styles.forwardIcon} />
 
-                  <Link href="/integrations">Featured Product</Link>
+                  <Link href="/services">Residential Solutions</Link>
                 </li>
                 <li>
                   <FaAngleDoubleRight className={styles.forwardIcon} />
 
-                  <Link href="/team">Our Team</Link>
+                  <Link href="/services">Commercial Solutions</Link>
                 </li>
               </ul>
             </div>
@@ -80,11 +80,16 @@ const Footer = () => {
                 </div>
                 <div className={styles.footerContact}>
                   <IoMailOpenOutline className={styles.iconLocation} />
+                              <Link href={`mailto:${website_email}`}>
                   <p>{website_email}</p>
+</Link>
                 </div>
                 <div className={styles.footerContact}>
                   <IoPhonePortraitOutline className={styles.iconLocation} />
+                                 <Link href={`tel:${website_phone}`}>
+
                   <p>{website_phone}</p>
+                                 </Link>
                 </div>
               </div>
             </div>
@@ -95,12 +100,12 @@ const Footer = () => {
           <p>
             Copyright @ {data}
             {""}
-            <span className={styles.ownername}>cleanpowerco.com</span> All
-            rights reserved.
+            <span className={styles.ownername}>cleanpowerco.com</span>{""} All
+            rights Reserved.
           </p>
           <div className={styles.legalLinks}>
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/terms">Terms of Service</Link>
+            <Link href="/privacypolicy">Privacy Policy</Link>
+            <Link href="/termscondition">Terms of Service</Link>
           </div>
         </div>
       </div>

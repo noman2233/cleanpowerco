@@ -5,8 +5,7 @@ import styles from "./Banner.module.css";
 const Banner = ({ title, breadcrumb, bgImage }) => {
   return (
     <section className={styles.banner}>
-      {/* Next.js Image component for better optimization */}
-      <Image
+       <Image
         src={bgImage}
         alt={title}
         fill
@@ -18,9 +17,9 @@ const Banner = ({ title, breadcrumb, bgImage }) => {
 
       <div className={styles.content}>
         <h1 className={styles.title}>{title}</h1>
-        <p className={styles.breadcrumbText}>
+        {/* <p className={styles.breadcrumbText}>
           Home <span className={styles.separator}>■</span> {breadcrumb}
-        </p>
+        </p> */}
       </div>
     </section>
   );

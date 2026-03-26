@@ -4,11 +4,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { HiMenu, HiX } from "react-icons/hi";
+import { HiMenu } from "react-icons/hi";
 import styles from "./Navbar.module.css";
 import SideMenu from "../SideMenu/SideMenu";
 import { scrollToSection } from '../../app/scroll';
-import { app_logo, MENU_ITEMS } from "../data";
+import { app_logo, MENU_ITEMS, website_phone } from "../data";
 import { FaPhone } from "react-icons/fa6";
 
 const Navbar = () => {
@@ -58,11 +58,9 @@ const Navbar = () => {
                   onClick={(e) => {
                     e.preventDefault();
 
-                    // If user is NOT on home page, go home first, then scroll
-                    if (pathname !== "/") {
+                     if (pathname !== "/") {
                       router.push("/");
-                      // Small delay to allow the home page to load before scrolling
-                      setTimeout(() => scrollToSection(item.id), 100);
+                       setTimeout(() => scrollToSection(item.id), 100);
                     } else {
                       scrollToSection(item.id);
                     }
@@ -77,9 +75,11 @@ const Navbar = () => {
           </nav>
 
           <div className={styles.right}>
+            <Link href={`tel:${website_phone}`} className={styles.iconLink}>
             <button className={styles.iconBtn}>
               <FaPhone className={styles.navbarIcon} />
             </button>
+            </Link>
 
           
 

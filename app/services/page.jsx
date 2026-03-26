@@ -2,7 +2,6 @@ import React from "react";
 import { services } from "@/components/data";
 import ServicesSection from "../../components/ServicesSection/ServicesSection";
 import Banner from "@/pageComponents/Banner/Banner";
-import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import WebLayout from "@/components/layout/WebLayout";
 import AboutSection from "@/components/AboutSection/AboutSection";
 

@@ -2,7 +2,8 @@ export const app_logo = "https://i.ibb.co/zTmNhX39/logo.png";
 // export const app_logo="https://sowindwp.websitelayout.net/wp-content/uploads/2023/12/logo.png"
 // "https://www.cleanpowerco.com.au/wp-content/uploads/2018/11/logo.png";
 import { IoIosArrowForward } from "react-icons/io";
-
+import { HiOutlineShieldCheck, HiOutlineLightningBolt } from "react-icons/hi";
+import { BiLeaf } from "react-icons/bi";
 export const website_email = "admin@cleanpowerco.com.au";
 export const website_phone = "1300976741";
 export const contact_para = "1300976741";
@@ -18,12 +19,7 @@ export const MENU_ITEMS = [
     icon: IoIosArrowForward,
   }, // Path changed
   { label: "About", id: "about", path: "/about", icon: IoIosArrowForward }, // Path changed
-  // {
-  //   label: "Testimonials",
-  //   id: "testimonials",
-  //   path: "/",
-  //   icon: IoIosArrowForward,
-  // },
+
   { label: "FAQs", id: "faqs", path: "/", icon: IoIosArrowForward },
   {
     label: "Contact",
@@ -38,6 +34,21 @@ export const about_text =
 
 export const footer_text =
   "Clean Power Co is dedicated to democratizing renewable energy for all Australians. From initial design to final connection, we deliver seamless, cost-effective, and steadfast solar solutions tailored for every home.";
+
+export const featureCards = [
+  {
+    icon: <HiOutlineShieldCheck size={40} color="#27a770" />,
+    title: "Trust & Warranty",
+text: "Securing full legal compliance, land rights, and state permits for your peace of mind.",  },
+  {
+    icon: <HiOutlineLightningBolt size={40} color="#27a770" />,
+    title: "Efficiency & Power",
+text: "Optimizing infrastructure for peak energy output and long-term technical performance.",  },
+  {
+    icon: <BiLeaf size={40} color="#27a770" />,
+    title: "Simple & Easy",
+text: "Streamlining complex logistics and site management into one seamless, turnkey solution.",  },
+];
 
 export const testimonialsData = [
   {
@@ -147,9 +158,23 @@ export const services = [
         fill="none"
         stroke="white"
         strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
-        <path d="M9 18h6M10 22h4M12 2v3M5 8l2 2M19 8l-2 2" />
-        <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
+        {/* Main Building Structure */}
+        <path d="M3 21h18" />
+        <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16" />
+
+        {/* Windows */}
+        <path d="M9 7h1" />
+        <path d="M14 7h1" />
+        <path d="M9 11h1" />
+        <path d="M14 11h1" />
+        <path d="M9 15h1" />
+        <path d="M14 15h1" />
+
+        {/* Entrance Door */}
+        <path d="M11 21v-3h2v3" />
       </svg>
     ),
   },
@@ -190,14 +215,20 @@ export const services = [
         fill="none"
         stroke="white"
         strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
-        <path d="M9 18h6M10 22h4M12 2v3M5 8l2 2M19 8l-2 2" />
-        <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
+        {/* The Handshake / Partnership */}
+        <path d="M11 20H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v8" />
+        <path d="M16 20v2" />
+        <path d="M20 20v2" />
+        <path d="M13 15l3 3 5-5" />
+        <path d="M8 8h1M8 12h1M16 8h1M16 12h1M8 16h1" />
       </svg>
     ),
   },
   {
-    id: 5,
+    id: 6,
     title: "Solar Maintenance & Repairs",
     description:
       "Routine maintenance to keep your system running smoothly.Fast and reliable repairs to ensure consistent performance.",
@@ -211,9 +242,21 @@ export const services = [
         fill="none"
         stroke="white"
         strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
-        <path d="M9 18h6M10 22h4M12 2v3M5 8l2 2M19 8l-2 2" />
-        <path d="M12 5a7 7 0 0 0-7 7c0 2.5 2 4.5 4 5h6c2-.5 4-2.5 4-5a7 7 0 0 0-7-7z" />
+        {/* The Gear (System/Machine) */}
+        <path d="M12.22 2a9 9 0 0 1 8.7 8.7" />
+        <path d="M19 12a7 7 0 1 1-7-7" />
+        <path d="M12 9v3l2 2" />
+
+        {/* The Wrench (The Tool) */}
+        <path d="M21 2l-2 2" />
+        <path d="M19 4L11 12" />
+        <path d="M16 4h4v4" />
+
+        {/* Bottom Plate/Nut */}
+        <circle cx="12" cy="12" r="3" />
       </svg>
     ),
   },
@@ -253,7 +296,7 @@ export const aboutTabs = [
     id: "choose",
     label: "Why Choose Us",
     content:
-      "Ontes mauris eget aliquet fermentum venenatis taciti tempus dignssim mollis pharetra class habitant congue pulvinar rhoncus proin bibendum torquent life ultrices penatibus feugiat phasellus.",
+      "Our team uses smart tools and careful planning to help you succeed. We listen to what you need and build things that are strong, safe for the planet, and made to last for many years.",
     features: [
       "Experienced Team of Experts",
       "Very first Customers Service",
@@ -287,22 +330,143 @@ export const aboutTabs = [
   },
 ];
 
-
 // constants/data.js
 export const workProcessData = [
   {
     id: "01",
     title: "Project Planning",
-    image: "https://img.freepik.com/free-photo/side-view-engineer-drawing-plan-outdoors_23-2149352262.jpg?semt=ais_hybrid&w=740&q=80", // Engineer with turbines
+    image:
+      "https://img.freepik.com/free-photo/side-view-engineer-drawing-plan-outdoors_23-2149352262.jpg?semt=ais_hybrid&w=740&q=80", // Engineer with turbines
   },
   {
     id: "02",
     title: "Research & Analysis",
-    image: "https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg?semt=ais_hybrid&w=740&q=80", // Team meeting
+    image:
+      "https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg?semt=ais_hybrid&w=740&q=80", // Team meeting
   },
   {
     id: "03",
     title: "Installation & Maintenance",
-    image: "https://img.freepik.com/free-photo/solar-panel-installation-rooftop_23-2152021003.jpg", // Solar/Tech maintenance
+    image:
+      "https://img.freepik.com/free-photo/solar-panel-installation-rooftop_23-2152021003.jpg", // Solar/Tech maintenance
+  },
+];
+
+export const slides = [
+  {
+    image:
+      "https://img.freepik.com/free-photo/two-asian-young-engineers-walking-along-rows-photovoltaic-panels-solar-farm-they-use-laptop-computer-talking-together_1150-57228.jpg?semt=ais_hybrid&w=740&q=80",
+    tagline: "INSTANT . SIMPLE . EXCELLENCE",
+    title: (
+      <>
+        Driving Australia’s <br /> Energy Future Forward
+      </>
+    ),
+  },
+  {
+    image:
+      "https://gepsenergy.com/assets/images/blog/single/hyrbird-power.webp",
+    tagline: "CLEAN . RENEWABLE . RELIABLE",
+    title: (
+      <>
+        Leading Seamless <br /> Solar Energy Transition
+      </>
+    ),
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0497/4749/3026/files/1_7733b6f3-c80f-452c-92e4-ad853201dec1_1024x1024.png?v=1686314683",
+    tagline: "AWARD WINNING . TRUSTED",
+    title: (
+      <>
+        Powering Australia’s Clean <br /> Energy Future Together
+      </>
+    ),
+  },
+];
+
+export const TERMS_DATA = [
+  {
+    id: 1,
+    title: "Agreement to Terms",
+    desc: "By accessing our platform, creating a registered account, or completing a furniture purchase, you acknowledge that you have read, understood, and legally agree to be bound by these Terms and Conditions. These terms constitute a legally binding agreement between you and our furniture logistics platform. If you do not agree with any part of these terms, you must immediately discontinue use of the site and our services.",
+  },
+  {
+    id: 2,
+    title: "User Account Responsibility",
+    desc: "You are solely responsible for maintaining the confidentiality and security of your account credentials and your JWT-based session tokens. You agree to accept full financial and legal responsibility for all activities and orders placed through your account. In the event of unauthorized access or a security breach of your login information, you must notify our security team immediately to invalidate the compromised session.",
+  },
+  {
+    id: 3,
+    title: "Product Representation",
+    desc: "We make every effort to display the colors, textures, and dimensions of our furniture as accurately as possible. However, due to variations in professional studio lighting, individual monitor calibrations, and the natural characteristics of materials like wood grain or leather, we cannot guarantee that the physical product will perfectly match the digital representation on your screen. Minor variations are not considered manufacturing defects.",
+  },
+  {
+    id: 4,
+    title: "Pricing & Availability",
+    desc: "All prices, discounts, and availability are subject to change without prior notice. While we strive for 100% accuracy, we reserve the right to cancel any orders arising from typographical errors, pricing glitches, or unexpected stock shortages from our manufacturing partners. In the event of a cancellation after payment has been processed, a full refund will be issued to your original payment method immediately.",
+  },
+  {
+    id: 5,
+    title: "Intellectual Property",
+    desc: "All content included on this site—including website architecture, furniture photography, logos, descriptive text, and proprietary custom code—is the exclusive property of this company and is protected by international copyright, trademark, and intellectual property laws. Users are strictly prohibited from reproducing, duplicating, or exploiting any portion of this site for commercial purposes without express written consent.",
+  },
+  {
+    id: 6,
+    title: "Prohibited Site Use",
+    desc: "You agree not to engage in any activity that interferes with the proper working of the platform. This includes, but is not limited to, using automated systems (bots, spiders, or scrapers) to harvest pricing data, attempting to bypass security headers, or trying to access unauthorized order information via API manipulation. Any attempt to reverse-engineer our authentication flow or JWT implementation will result in an immediate account ban and potential legal action.",
+  },
+  {
+    id: 7,
+    title: "Limitation of Liability",
+    desc: "To the maximum extent permitted by law, our company shall not be held liable for any indirect, incidental, special, or consequential damages—including loss of profits or property damage—resulting from the use of our products or unavoidable delays in the freight shipping process. Our total liability for any claim related to a purchase shall not exceed the original purchase price paid by the customer for the specific item in question.",
+  },
+  {
+    id: 8,
+    title: "Governing Law",
+    desc: "These Terms and Conditions and any separate agreements whereby we provide you services shall be governed by and construed in accordance with the laws of the jurisdiction where our corporate headquarters are located. You agree that any legal disputes or claims arising from your use of this site will be settled exclusively in the state or federal courts within that jurisdiction, and you waive any objection to such venue.",
+  },
+];
+
+export const PRIVACY_DATA = [
+  {
+    id: 1,
+    title: "Information Collection",
+    desc: "We collect essential personal identifiers including your full name, email address, physical shipping address, and primary phone number. This data is gathered specifically to facilitate the processing of high-value furniture orders, verify your identity for secure transactions, and provide real-time delivery updates through our automated tracking systems.",
+  },
+  {
+    id: 2,
+    title: "Logistics Data Sharing",
+    desc: "To ensure your furniture arrives safely, we share your delivery address and contact number with our trusted third-party freight carriers and LTL logistics partners. These partners are contractually obligated to use your information solely for the purpose of coordinating delivery appointments and are strictly prohibited from using or selling your data for independent marketing purposes.",
+  },
+  {
+    id: 3,
+    title: "JWT & Cookie Usage",
+    desc: "Our platform utilizes JSON Web Tokens (JWT) to provide a secure, persistent login experience without storing sensitive passwords in your browser. Additionally, we use functional cookies to maintain your shopping cart progress, remember your site preferences, and ensure that your session remains authenticated across different tabs or during return visits to our storefront.",
+  },
+  {
+    id: 4,
+    title: "Payment Data Security",
+    desc: "Your financial security is our top priority. We do not store full credit card numbers or CVV codes on our internal servers. All financial transactions are transmitted via Secure Socket Layer (SSL) technology and processed through fully encrypted, PCI-DSS compliant third-party payment gateways to ensure your sensitive billing information remains inaccessible to unauthorized parties.",
+  },
+  {
+    id: 5,
+    title: "Marketing & Opt-Out",
+    desc: "Users may choose to opt-in to our newsletter to receive furniture care guides, interior design tips, and exclusive promotional offers. Your participation is entirely voluntary. You maintain full control over your communication preferences and can opt-out at any any time by clicking the 'Unsubscribe' link found at the bottom of our emails or by updating your profile settings.",
+  },
+  {
+    id: 6,
+    title: "Data Retention",
+    desc: "We retain order history and basic contact data as required by law for tax reporting, financial auditing, and furniture warranty fulfillment. However, we respect your right to privacy; you may request the permanent deletion of your personal account data at any time via our support portal, provided there are no active orders or outstanding legal obligations tied to the account.",
+  },
+  {
+    id: 7,
+    title: "Child Privacy",
+    desc: "Our website and services are intended strictly for adults aged 18 and over. We do not knowingly collect, solicit, or maintain personal information from children under the age of 13. If we become aware that a minor has provided us with personal data without verifiable parental consent, we will take immediate steps to delete that information from our database and terminate the associated account.",
+  },
+  {
+    id: 8,
+    title: "Policy Updates",
+    desc: "We reserve the right to update this Privacy Policy to reflect changes in global privacy laws or our internal data handling practices. If significant changes are made—specifically regarding how we share or secure your personal information—we will notify all registered users via their primary email address and place a prominent notice on our homepage for 30 days.",
   },
 ];

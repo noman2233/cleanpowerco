@@ -134,28 +134,12 @@ const WorkProcess = () => {
 
           <div className={styles.rightHeader}>
             <p className={styles.description}>
-              We take a hands-on, data-driven approach to every project. By
-              conducting rigorous site assessments and utilizing precision
-              topography mapping, our team ensures that your infrastructure is
-              optimized for maximum output and long-term environmental
-              sustainability.
+              We work closely with you and use real facts to finish every job.
+              Our team carefully checks each location and uses high-tech maps to
+              study the land. This helps us build everything the right way, so
+              it works perfectly and stays safe for the planet for a long time.
             </p>
-                 {/* <SplitText
-              text="Our End-to-End Project Methodology"
-              className={styles.description}
-              delay={50}
-              duration={1.25}
-              ease="power3.out"
-              splitType="chars"
-              from={{ opacity: 0, y: 20 }}
-              to={{ opacity: 1, y: 0 }}
-              threshold={0.1}
-              rootMargin="-100px"
-              textAlign="left"
-              showCallback
-            /> */}
-
-        
+         
           </div>
         </div>
 

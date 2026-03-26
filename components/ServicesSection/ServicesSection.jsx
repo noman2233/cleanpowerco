@@ -67,6 +67,7 @@ import Image from "next/image";
 import styles from "./ServicesSection.module.css";
 import { motion } from "framer-motion";
 import SplitText from "../animatedComponents/SplitText/SplitText";
+import { FiShield } from "react-icons/fi";
 
 /* 🔥 Parent container (for stagger animation) */
 const containerVariants = {

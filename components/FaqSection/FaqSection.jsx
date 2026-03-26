@@ -24,7 +24,7 @@ const FaqSection = () => {
           <span className={styles.subHeading}>Home Service</span>
           {/* <h2 className={styles.mainHeading}>Have Any Questions?</h2> */}
 
-            <SplitText
+          <SplitText
             text="Have Any Questions?"
             className={styles.mainHeading}
             delay={50}
@@ -36,9 +36,8 @@ const FaqSection = () => {
             threshold={0.1}
             rootMargin="-100px"
             textAlign="left"
-             showCallback
+            showCallback
           />
-
 
           <ul className={styles.featureList}>
             {features.map((item, index) => (
@@ -49,7 +48,7 @@ const FaqSection = () => {
             ))}
           </ul>
 
-          <ButtonComponent title="View Services" />
+          <ButtonComponent title="Why Choose Us" href="/about" />
         </div>
 
         {/* Right Side: Accordion */}

@@ -113,57 +113,11 @@ import { HiOutlineShieldCheck, HiOutlineLightningBolt } from "react-icons/hi";
 import { BiLeaf } from "react-icons/bi";
 import styles from "./HeroSection.module.css";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import { slides ,featureCards} from "../data";
 
-const slides = [
-  {
-    image:
-      "https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/slide-04.jpg",
-    tagline: "INSTANT . SIMPLE . EXCELLENCE",
-    title: (
-      <>
-        Driving Australia’s <br /> Energy Future Forward
-      </>
-    ),
-  },
-  {
-    image:
-      "https://gepsenergy.com/assets/images/blog/single/hyrbird-power.webp",
-    tagline: "CLEAN . RENEWABLE . RELIABLE",
-    title: (
-      <>
-        Leading Seamless <br /> Solar Energy Transition
-      </>
-    ),
-  },
-  {
-    image:
-      "https://cdn.shopify.com/s/files/1/0497/4749/3026/files/1_7733b6f3-c80f-452c-92e4-ad853201dec1_1024x1024.png?v=1686314683",
-    tagline: "AWARD WINNING . TRUSTED",
-    title: (
-      <>
-        Powering Australia’s Clean <br /> Energy Future Together
-      </>
-    ),
-  },
-];
 
-const featureCards = [
-  {
-    icon: <HiOutlineShieldCheck size={40} color="#27a770" />,
-    title: "Trust & Warranty",
-    text: "In power departure, land procurement, liaisoning and working with state.",
-  },
-  {
-    icon: <HiOutlineLightningBolt size={40} color="#27a770" />,
-    title: "Efficiency & Power",
-    text: "In power departure, land procurement, liaisoning and working with state.",
-  },
-  {
-    icon: <BiLeaf size={40} color="#27a770" />,
-    title: "Simple & Easy",
-    text: "In power departure, land procurement, liaisoning and working with state.",
-  },
-];
+
+
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
@@ -210,7 +164,6 @@ const HeroSection = () => {
           </AnimatePresence>
         </div>
 
-        {/* Content Animation */}
         <div className={styles.contentWrapper}>
           <AnimatePresence mode="wait">
             <motion.div
@@ -224,7 +177,7 @@ const HeroSection = () => {
               <span className={styles.tagline}>{slides[current].tagline}</span>
               <h1 className={styles.mainTitle}>{slides[current].title}</h1>
               <div className={styles.btnGroup}>
-                <ButtonComponent title="Get Started" />
+                <ButtonComponent title="Get Started" href="/services" />
               </div>
             </motion.div>
           </AnimatePresence>

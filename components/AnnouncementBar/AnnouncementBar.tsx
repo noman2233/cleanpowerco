@@ -19,7 +19,9 @@ const AnnouncementBar: React.FC = () => {
           <div className={styles.divider}>|</div>
           <div className={styles.item}>
             <CgMail className={styles.icon} />
+            <Link href={`mailto:${website_email}`}>
             <span>{website_email}</span>
+            </Link>
           </div>
         </div>
 
