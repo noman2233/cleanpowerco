@@ -69,14 +69,12 @@ const WhyChooseUs = () => {
               />
             </motion.div>
           </div>
-          {/* <div className={styles.rightColumn}> */}
           <motion.div
-              className={styles.rightColumn} // Ensure this has dimensions in CSS
+              className={styles.rightColumn}  
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={zoomVariants}
-              // Stagger delay for the tall image
               transition={{ delay: 0.4, ...zoomVariants.visible.transition }}
             > 
           

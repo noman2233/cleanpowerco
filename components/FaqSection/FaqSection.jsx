@@ -19,11 +19,9 @@ const FaqSection = () => {
   return (
     <section className={styles.container}>
       <div className={styles.wrapper}>
-        {/* Left Side: Content */}
-        <div className={styles.contentSide}>
+         <div className={styles.contentSide}>
           <span className={styles.subHeading}>Home Service</span>
-          {/* <h2 className={styles.mainHeading}>Have Any Questions?</h2> */}
-
+ 
           <SplitText
             text="Have Any Questions?"
             className={styles.mainHeading}
@@ -51,7 +49,6 @@ const FaqSection = () => {
           <ButtonComponent title="Why Choose Us" href="/about" />
         </div>
 
-        {/* Right Side: Accordion */}
         <div className={styles.accordionSide}>
           {faqData.map((item, index) => (
             <div key={item.id} className={styles.accordionItem}>

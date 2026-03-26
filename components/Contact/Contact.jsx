@@ -12,7 +12,7 @@ import { contact_image, website_email, website_phone } from "../data";
 import { MdOutlineMarkEmailRead, MdOutlinePhonelinkRing } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import Image from "next/image";
-import SplitText from "../animatedComponents/SplitText/SplitText";
+import HeadingSubHeading from "../HeadingSubHeading/HeadingSubHeading";
 
 const Contact = ({ showImage, showInfo }) => {
   // ✅ Validation Schema
@@ -39,7 +39,7 @@ const Contact = ({ showImage, showInfo }) => {
           from_name: username,
           from_email: email,
           subject: subject,
-          phone: number, // Make sure this matches your EmailJS template
+          phone: number,  
           message: message,
         },
         "8uZ-MXEwIJo5TW-0O"
@@ -47,7 +47,7 @@ const Contact = ({ showImage, showInfo }) => {
       .then(
         (result) => {
           resetForm();
-          setSubmitting(false); // ✅ Reset submitting state
+          setSubmitting(false);  
           toast.success("Email Sent Successfully!", {
             position: "top-right",
             autoClose: 5000,
@@ -62,7 +62,7 @@ const Contact = ({ showImage, showInfo }) => {
         },
         (error) => {
           console.error("❌ Error sending email:", error.text);
-          setSubmitting(false); // ✅ Reset submitting state on error too
+          setSubmitting(false); 
           toast.error("Email not sent. Please try again", {
             position: "top-right",
             autoClose: 5000,
@@ -93,31 +93,14 @@ const Contact = ({ showImage, showInfo }) => {
         theme="light"
         transition={Bounce}
       />
-      <div className={styles.header}>
-        <span className={styles.subtitle}>Contact Us.</span>
-        {/* <h2 className={styles.title}>Get In Touch With Us </h2> */}
+       <HeadingSubHeading title="Get In Touch With Us" subTitle="Contact Us" />
 
-            <SplitText
-            text="Get In Touch With Us"
-            className={styles.title}
-            delay={50}
-            duration={1.25}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="center"
-             showCallback
-          />
-      </div>
+ 
       <section className={styles.contactSection}>
         <div className={styles.contactContainer}>
           {showInfo && (
             <div className={styles.contactInfo}>
-              <h4 className={styles.contactSubtitle}>Contact Us</h4>
-              <h1 className={styles.contactTitle}>Get in touch with us</h1>
+              
 
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
@@ -138,8 +121,7 @@ const Contact = ({ showImage, showInfo }) => {
                     <h3>E-Mail</h3>
                     <a
                       href={`mailto:${website_email}`}
-                      // className={styles.emailLink}
-                      // className={styles.contactForm_para}
+                    
                     >
                       <p className={styles.contactForm_para}>{website_email}</p>
                     </a>
@@ -164,7 +146,7 @@ const Contact = ({ showImage, showInfo }) => {
                 src={contact_image}
                 alt="Contact Us"
                 width={500}
-                height={500} // ✅ Provide a realistic height
+                height={500}  
                 className={styles.contact_image}
               />
             </div>
@@ -198,8 +180,8 @@ const Contact = ({ showImage, showInfo }) => {
                 isSubmitting,
               }) => (
                 <form onSubmit={handleSubmit}>
-                  {" "}
-                  {/* ✅ Wrap in form for better accessibility */}
+              
+              
                   <div className={styles.formRow}>
                     <InputComponent
                       label="Name"
@@ -245,7 +227,7 @@ const Contact = ({ showImage, showInfo }) => {
                       error={
                         touched.number && errors.number ? errors.number : ""
                       }
-                      type="tel" // ✅ Better for phone numbers
+                      type="tel"  
                       onBlur={handleBlur("number")}
                     />
                   </div>

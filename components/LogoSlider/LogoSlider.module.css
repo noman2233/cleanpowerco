@@ -60,19 +60,9 @@
 
 /* --- RESPONSIVENESS --- */
 
-/* Medium Screens (Tablets) */
-@media (min-width: 768px) {
-  .logoItem {
-    width: 180px;
-    height: 100px;
-  }
-  .logoTrack {
-    gap: 30px;
-  }
-}
 
 /* Large Screens (Desktops) */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .logoItem {
     width: 220px;
     height: 120px;
@@ -80,4 +70,19 @@
   .logoTrack {
     gap: 40px;
   }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .logoItem {
+    width: 180px;
+    height: 100px;
+  }
+  .logoTrack {
+    gap: 30px;
+  }
+
+  .mainSlider {
+    margin: 40px 0 50px;
+}
 }

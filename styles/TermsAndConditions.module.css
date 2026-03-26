@@ -60,7 +60,7 @@
   .description {
     font-size: 15px;
     line-height: 1.6;
-    text-align: left; /* Better readability on small screens */
+    text-align: left;  
   }
   .contentWrapper {
     gap: 30px;

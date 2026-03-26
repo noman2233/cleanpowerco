@@ -6,24 +6,24 @@
   align-items: center;
   justify-content: center;
   color: white;
-  overflow: hidden; /* Ensures image doesn't bleed out */
+  overflow: hidden;  
 }
 
 .bgImage {
-  object-fit: cover; /* Equivalent to background-size: cover */
+  object-fit: cover; 
   z-index: 1;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for text legibility */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 2;
 }
 
 .content {
   position: relative;
-  z-index: 10; /* Above overlay and image */
+  z-index: 10; 
   text-align: center;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .separator {
-  color: var(--primary-green, #27a770); /* Optional color for the square */
+  color: var(--primary-green, #27a770);  
   margin: 0 10px;
   font-size: 12px;
 }
@@ -58,7 +58,7 @@
 }
 
 .iconWrapper {
-  background-color: #ffffff; /* Or match your brand colors */
+  background-color: #ffffff;  
   padding: 12px;
   cursor: pointer;
   display: flex;

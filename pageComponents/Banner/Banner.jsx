@@ -17,9 +17,7 @@ const Banner = ({ title, breadcrumb, bgImage }) => {
 
       <div className={styles.content}>
         <h1 className={styles.title}>{title}</h1>
-        {/* <p className={styles.breadcrumbText}>
-          Home <span className={styles.separator}>■</span> {breadcrumb}
-        </p> */}
+         
       </div>
     </section>
   );

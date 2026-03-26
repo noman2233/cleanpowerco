@@ -18,7 +18,6 @@
   align-items: center;
 }
 
-/* Image Side */
 .imageSide {
   position: relative;
 }
@@ -36,17 +35,7 @@
   object-fit: cover;
 }
 
-/* .accentBars {
-  position: absolute;
-  left: -40px;
-  top: 5%;
-  height: 90%;
-  width: 6px;
-  background-color: var(--color-green);
-  box-shadow: 0 150px 0 var(--color-green); 
-} */
-
-/* Content Side */
+ 
 .badge {
   font-weight: 500;
   font-size: 14px;
@@ -70,7 +59,6 @@
   margin-bottom: 35px;
 }
 
-/* Tabs */
 .tabHeader {
   display: flex;
   gap: 15px;
@@ -139,7 +127,6 @@
   color: var(--color-green);
 }
 
-/* Footer Actions */
 .footerActions {
   display: flex;
   align-items: center;

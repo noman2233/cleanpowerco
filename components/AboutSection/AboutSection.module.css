@@ -21,7 +21,7 @@
 
 .imageWrapper {
   position: relative;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
   width: 100%;
   overflow: hidden;
 }
@@ -174,10 +174,17 @@
 
 /* Tablet & Up (Medium) */
 @media (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
   .title {
     font-size: 40px;
   }
-  
+
   .footer {
     flex-direction: row;
     align-items: center;
@@ -186,5 +193,11 @@
 
   .trustBox {
     width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0px 20px;
   }
 }

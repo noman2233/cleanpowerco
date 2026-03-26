@@ -1,6 +1,5 @@
-/* ===== Section Layout ===== */
 .contactSection {
-  padding: 80px 100px;
+  padding: 0px 100px 60px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,8 +49,8 @@
 }
 
 .contact_image {
-  width: 90%;
-  height: 100%; /* Or whatever height matches your form */
+  width: 100%;
+  height: 100%; 
   border-radius: 10px;
   overflow: hidden;
   object-fit: cover;
@@ -121,11 +120,9 @@
 }
 
 .iconCircle {
-  /* width: 45px;
-  height: 40px; */
+ 
   padding: 12px;
   border-radius: 50%;
-  /* background: var(--color-primary); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,10 +205,9 @@
   transform: translateY(-2px);
 }
 
-/* When button is disabled */
 .button_contact:disabled {
   cursor: not-allowed;
-  opacity: 0.6; /* Optional: make it look inactive */
+  opacity: 0.6;  
 }
 
 /* ===== Responsive ===== */
@@ -234,6 +230,11 @@
     min-width: 90%;
     padding: 20px;
   }
+
+
+ 
+
+
 }
 @media (max-width: 550px) {
   .formRow {

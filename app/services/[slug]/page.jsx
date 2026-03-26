@@ -1,5 +1,5 @@
 "use client";
-import React, { use } from "react"; // 1. Import the 'use' hook
+import React, { use } from "react"; 
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
@@ -88,7 +88,6 @@ const ServiceDetail = ({ params }) => {
               </div>
             </main>
 
-            {/* RIGHT: SIDEBAR */}
             <aside className={styles.sidebar}>
               <div className={styles.widget}>
                 <h3 className={styles.widgetTitle}>All Services</h3>

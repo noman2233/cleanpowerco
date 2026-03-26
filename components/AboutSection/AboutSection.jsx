@@ -8,8 +8,7 @@ const AboutSection = () => {
   return (
     <section className={styles.container}>
       <div className={styles.wrapper}>
-        {/* Left Side: Image Content */}
-        <div className={styles.imageContainer}>
+         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper}>
             <Image
               src="https://sowindwp.websitelayout.net/wp-content/uploads/2024/01/about4.jpg"
@@ -18,12 +17,10 @@ const AboutSection = () => {
               objectFit="cover"
               className={styles.mainImage}
             />
-            {/* The decorative white notch at the bottom left */}
-            <div className={styles.notch}></div>
+             <div className={styles.notch}></div>
           </div>
         </div>
 
-        {/* Right Side: Text Content */}
         <div className={styles.contentContainer}>
           <div className={styles.label}>
             <span className={styles.square}></span> ABOUT US
@@ -79,7 +76,6 @@ const AboutSection = () => {
                 <span className={styles.phoneLabel}>
                   The Future of Solar Energy
                 </span>
-                {/* <span className={styles.phoneNumber}>123-456-789</span> */}
                 <span className={styles.phoneNumber}>{website_phone}</span>
               </div>
             </div>

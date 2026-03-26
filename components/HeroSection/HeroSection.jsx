@@ -10,10 +10,6 @@ import styles from "./HeroSection.module.css";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import { slides ,featureCards} from "../data";
 
-
-
-
-
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
@@ -30,8 +26,7 @@ const HeroSection = () => {
 
   return (
     <div className={styles.heroContainer}>
-      {/* PRE-LOADER: This hidden div forces the browser to download all images immediately */}
-      <div style={{ display: "none" }}>
+       <div style={{ display: "none" }}>
         {slides.map((s, i) => (
           <img key={i} src={s.image} alt="preload" />
         ))}
@@ -78,8 +73,7 @@ const HeroSection = () => {
           </AnimatePresence>
         </div>
       </section>
-
-      {/* Floating Feature Cards */}
+ 
       <div className={styles.cardSection}>
         <div className={styles.cardContainer}>
           {featureCards.map((card, index) => (
