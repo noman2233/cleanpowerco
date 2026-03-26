@@ -5,7 +5,6 @@
 // import { motion } from "framer-motion";
 // import SplitText from "../animatedComponents/SplitText/SplitText";
 
- 
 // const ServicesSection = ({ services }) => {
 //   return (
 //     <section className={styles.container}>
@@ -54,7 +53,7 @@
 //           </div>
 //         ))}
 //       </div>
-    
+
 //     </section>
 //   );
 // };
@@ -68,6 +67,7 @@ import styles from "./ServicesSection.module.css";
 import { motion } from "framer-motion";
 import SplitText from "../animatedComponents/SplitText/SplitText";
 import { FiShield } from "react-icons/fi";
+import Link from "next/link";
 
 /* 🔥 Parent container (for stagger animation) */
 const containerVariants = {
@@ -138,6 +138,10 @@ const ServicesSection = ({ services }) => {
             viewport={{ once: true, margin: "-50px" }}
           >
             {/* IMAGE */}
+    <Link
+                href={`/services/${service.slug}`}
+                className={styles.imageLink}
+              >
             <div className={styles.imageWrapper}>
               <Image
                 src={service.image}
@@ -152,15 +156,15 @@ const ServicesSection = ({ services }) => {
             <div className={styles.cardBody}>
               <div className={styles.textContainer}>
                 <h3 className={styles.cardTitle}>{service.title}</h3>
-                <p className={styles.cardText}>
-                  {service.description}
-                </p>
+                <p className={styles.cardText}>{service.description}</p>
               </div>
-
-              <button className={styles.readMoreBtn}>
-                <span>READ MORE</span>
-              </button>
+          
+                <button className={styles.readMoreBtn}>
+                  <span>READ MORE</span>
+                </button>
+             
             </div>
+            </Link>
           </motion.div>
         ))}
       </motion.div>

@@ -104,6 +104,8 @@ export const services = [
   {
     id: 1,
     title: "Solar System Design",
+    slug: "solar-system-design",
+    
     description:
       "Customized system design based on your energy needs and roof space. Optimized for maximum efficiency and return on investment.",
     image:
@@ -125,6 +127,7 @@ export const services = [
   {
     id: 2,
     title: "Residential Solar Systems",
+    slug: "residential-solar-systems",
     description:
       "Tailored solar solutions built specifically for modern homes. Lower your energy costs while increasing property value.",
     image:
@@ -146,6 +149,7 @@ export const services = [
   {
     id: 3,
     title: "Commercial Solar Solutions",
+    slug: "commercial-solar-solutions",
     description:
       "Efficient solar systems designed for businesses of all sizes.Cut operational costs and move towards sustainable energy.",
     image:
@@ -181,6 +185,8 @@ export const services = [
   {
     id: 4,
     title: "Solar Panel Installation",
+    slug: "solar-panel-installation",
+
     description:
       "Expert installation using premium solar panels for long-term performance. Designed to maximize energy output and reduce your electricity bills.",
     image:
@@ -203,6 +209,7 @@ export const services = [
   {
     id: 5,
     title: "Energy Efficiency Consulting",
+    slug: "energy-efficiency-consulting",
     description:
       "Expert guidance to optimize your energy consumption.Maximize savings with smarter energy usage strategies.",
     image:
@@ -230,6 +237,7 @@ export const services = [
   {
     id: 6,
     title: "Solar Maintenance & Repairs",
+    slug: "solar-maintenance-repairs",
     description:
       "Routine maintenance to keep your system running smoothly.Fast and reliable repairs to ensure consistent performance.",
     image:
@@ -260,6 +268,129 @@ export const services = [
       </svg>
     ),
   },
+];
+
+export const detailedServices = [
+  {
+    id: "solar-system-design",
+    title: "Solar System Design",
+    slug: "solar-system-design",
+    bannerTitle: "Precision Engineering for Solar Efficiency",
+    metaDescription: "Professional custom solar system design services. We optimize panel layout and energy storage for maximum ROI and long-term reliability.",
+    heroImage: "https://img.freepik.com/free-photo/foreman-businessman-solar-energy-station_1157-35687.jpg?w=1200",
+    description: "Our engineering team specializes in creating bespoke solar blueprints. We don't believe in one-size-fits-all; we analyze your specific roof orientation, shading factors, and local climate data to design a system that generates the highest possible kilowatt-hours per year.",
+    subDescription: "Using advanced 3D modeling and irradiance analysis, we ensure your solar investment is future-proofed against rising energy costs and grid instability.",
+    benefits: [
+      "Custom 3D Site Irradiance Analysis",
+      "Optimized Panel Placement for Peak Sun",
+      "Structural Engineering Approval",
+      "Battery Storage Compatibility Design",
+      "Maximum Government Rebate Eligibility",
+      "Grid Connection Pre-Approval Support",
+      "Scalable System Architecture",
+      "Comprehensive Performance Projection"
+    ]
+  },
+  {
+    id: "residential-solar-systems",
+    title: "Residential Solar Systems",
+    slug: "residential-solar-systems",
+    bannerTitle: "Empower Your Home with Clean Energy",
+    metaDescription: "High-performance residential solar systems for modern homes. Reduce electricity bills and increase property value with Clean Power Co.",
+    heroImage: "https://img.freepik.com/premium-photo/private-home-roof-covered-with-solar-photovoltaic-panels_127089-20920.jpg",
+    description: "Transform your home into a self-sustaining power plant. Our residential solutions focus on high-efficiency aesthetics—panels that look as good as they perform. We manage everything from the initial solar audit to the final local council approvals.",
+    subDescription: "Join thousands of Australian homeowners who have eliminated their daytime energy costs and protected their families from future energy price hikes.",
+    benefits: [
+      "Significant Reductions in Power Bills",
+      "Increased Real Estate Valuation",
+      "Premium 'All-Black' Aesthetic Options",
+      "Real-Time Mobile App Monitoring",
+      "Tier-1 Quality Panel Selection",
+      "Zero-Deposit Financing Options",
+      "25-Year Performance Warranties",
+      "Rapid Installation Turnaround"
+    ]
+  },
+  {
+    id: "commercial-solar-solutions",
+    title: "Commercial Solar Solutions",
+    slug: "commercial-solar-solutions",
+    bannerTitle: "Scalable Energy for Modern Business",
+    metaDescription: "Slash operational costs with industrial-grade commercial solar. Expert installation and energy management for Australian businesses.",
+    heroImage: "https://i.ibb.co/qLTZF2jR/aerial-shot-industrial-buildings-bristol-england.jpg",
+    description: "For businesses, solar isn't just an environmental choice—it's a critical financial strategy. We help companies turn idle roof space into an income-generating asset. Our commercial systems are engineered for heavy-duty load demands and high-uptime reliability.",
+    subDescription: "We provide detailed financial modeling including IRR (Internal Rate of Return) and payback period analysis to help your board make an informed investment decision.",
+    benefits: [
+      "Substantial Operational Cost Savings",
+      "Enhanced ESG and Sustainability Profile",
+      "Tax Incentives and Asset Write-offs",
+      "Peak-Shaving Load Management",
+      "Industrial Grade Mounting Systems",
+      "Minimal Business Disruption Installation",
+      "Remote Fleet Monitoring & Alerts",
+      "Dedicated Commercial Project Manager"
+    ]
+  },
+  {
+    id: "solar-panel-installation",
+    title: "Solar Panel Installation",
+    slug: "solar-panel-installation",
+    bannerTitle: "Certified Technical Solar Installation",
+    metaDescription: "CEC-accredited solar panel installation services. Safety-first approach with premium workmanship for long-term system performance.",
+    heroImage: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200",
+    description: "Workmanship is the difference between a system that lasts 5 years and one that lasts 25. Our installers are fully licensed and CEC-accredited. We use high-grade conduit, marine-grade stainless steel fasteners, and premium flashing to ensure your roof remains watertight.",
+    subDescription: "Safety is our priority. Every installation undergoes a multi-point quality check and is commissioned with professional testing equipment before we hand over the keys.",
+    benefits: [
+      "CEC Accredited Master Installers",
+      "Compliant with AU/NZ Standards",
+      "Weather-Proof Sealing Technology",
+      "Safety-First High-Voltage Wiring",
+      "Clean & Professional Site Management",
+      "System Commissioning & Testing",
+      "Post-Installation Safety Induction",
+      "Full Public Liability Insurance"
+    ]
+  },
+  {
+    id: "energy-consulting",
+    title: "Energy Efficiency Consulting",
+    slug: "energy-efficiency-consulting",
+    bannerTitle: "Data-Driven Energy Management",
+    metaDescription: "Expert energy efficiency consulting to optimize consumption and lower costs. Maximize your savings with smarter energy strategies.",
+    heroImage: "https://img.freepik.com/premium-photo/engineer-with-solar-panel-explaining-colleague-tablet-office_1270664-3684.jpg?w=1200",
+    description: "The cheapest kilowatt-hour is the one you never use. Our consulting service audits your current consumption patterns to identify 'energy leaks' in your business or home. We provide a roadmap for lighting upgrades, HVAC optimization, and behavioral changes.",
+    subDescription: "By combining energy reduction with solar generation, we help clients achieve the elusive 'Net Zero' status faster and more affordably.",
+    benefits: [
+      "Comprehensive Energy Usage Audits",
+      "ROI Focused Efficiency Roadmaps",
+      "Tariff and Bill Analysis",
+      "Power Factor Correction Advice",
+      "Smart Home/Building Integration",
+      "Carbon Footprint Measurement",
+      "Compliance with Industry Standards",
+      "Long-Term Energy Savings Coaching"
+    ]
+  },
+  {
+    id: "maintenance-repairs",
+    title: "Solar Maintenance & Repairs",
+    slug: "solar-maintenance-repairs",
+    bannerTitle: "Protect Your Solar Investment",
+    metaDescription: "Professional solar maintenance, panel cleaning, and repair services. Keep your system running at 100% efficiency year-round.",
+    heroImage: "https://img.freepik.com/premium-photo/african-american-worker-cleaning-solar-panel-solar-power-plant_255667-58646.jpg",
+    description: "Dust, bird droppings, and salt air can reduce your solar output by up to 30%. Our maintenance packages include professional cleaning, thermal imaging to detect hot spots, and DC isolator safety checks to prevent fire risks and ensure peak output.",
+    subDescription: "Don't wait for a high power bill to realize your system is down. We provide rapid diagnostic services and inverter repairs for all major brands including Fronius, SMA, and Sungrow.",
+    benefits: [
+      "Professional Chemical-Free Cleaning",
+      "Inverter Error Diagnostic & Repair",
+      "Thermal Imaging of Panel Cells",
+      "DC/AC Isolator Safety Inspections",
+      "System Performance Benchmarking",
+      "Wiring Integrity & Pest Checks",
+      "Warranty Claim Management",
+      "Fast Response Emergency Repairs"
+    ]
+  }
 ];
 
 // constants/data.js

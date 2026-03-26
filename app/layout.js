@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       className={`${plusJakartaSans.variable} ${poppins.variable}`}
       suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
 }

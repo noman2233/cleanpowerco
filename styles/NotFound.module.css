@@ -5,24 +5,13 @@
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  padding: 0 20px;
+  padding: 20px 0px;
   text-align: center;
   font-family: var(--font-jakarta);
 }
 
 .oopsText {
-  /* font-size: clamp(6rem, 20vw, 15rem); 
-  font-weight: 900;
-  line-height: 1;
-  margin: 0;
-  letter-spacing: -5px;
-  background-image: url("https://img.freepik.com/premium-photo/orange-galactic-spiral-cosmic-dance-stars-nebulae_1001175-36661.jpg?semt=ais_user_personalization&w=740&q=80");
-  background-size: cover;
-  background-position: center;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  user-select: none; */
+
    font-weight: 900;
    font-size: 100px;
    color: rgb(196, 0, 0);
