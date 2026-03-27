@@ -74,10 +74,10 @@ const Footer = () => {
             <div className={styles.linkGroup}>
               <h4>Contact us</h4>
               <div className={styles.contactList}>
-                <div className={styles.footerContact}>
+                {/* <div className={styles.footerContact}>
                   <IoLocationOutline className={styles.iconLocation} />
                   <p>Office 1405 92 Castle Street, Ireland</p>
-                </div>
+                </div> */}
                 <div className={styles.footerContact}>
                   <IoMailOpenOutline className={styles.iconLocation} />
                               <Link href={`mailto:${website_email}`}>

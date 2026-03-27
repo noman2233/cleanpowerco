@@ -24,7 +24,7 @@ const ContactUs = () => {
         />
         <Contact showInfo />
         <OfficeGrid/>
-        <Map />
+        {/* <Map /> */}
       </WebLayout>
     </div>
   );

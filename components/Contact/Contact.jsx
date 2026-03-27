@@ -39,7 +39,7 @@ const Contact = ({ showImage, showInfo }) => {
           from_name: username,
           from_email: email,
           subject: subject,
-          phone: number,  
+          phone: number,
           message: message,
         },
         "8uZ-MXEwIJo5TW-0O"
@@ -47,7 +47,7 @@ const Contact = ({ showImage, showInfo }) => {
       .then(
         (result) => {
           resetForm();
-          setSubmitting(false);  
+          setSubmitting(false);
           toast.success("Email Sent Successfully!", {
             position: "top-right",
             autoClose: 5000,
@@ -62,7 +62,7 @@ const Contact = ({ showImage, showInfo }) => {
         },
         (error) => {
           console.error("❌ Error sending email:", error.text);
-          setSubmitting(false); 
+          setSubmitting(false);
           toast.error("Email not sent. Please try again", {
             position: "top-right",
             autoClose: 5000,
@@ -79,7 +79,7 @@ const Contact = ({ showImage, showInfo }) => {
   };
 
   return (
-    <>
+    <div className={styles.contact_MainConainer}>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -93,15 +93,21 @@ const Contact = ({ showImage, showInfo }) => {
         theme="light"
         transition={Bounce}
       />
-       <HeadingSubHeading title="Get In Touch With Us" subTitle="Contact Us" />
+      <HeadingSubHeading title="Get In Touch With Us" subTitle="Contact Us" />
 
- 
       <section className={styles.contactSection}>
         <div className={styles.contactContainer}>
           {showInfo && (
             <div className={styles.contactInfo}>
-              
-
+              {/* <h4 className={styles.contactSubtitle}>Get in Touch</h4> */}
+              <h1 className={styles.contactTitle}>
+                Get in touch to discuss your project
+              </h1>
+              <p className={styles.contactDesc}>
+                Ready to power your property with the next generation of solar?
+                From residential arrays to commercial grids, our engineers are
+                here to lead the way
+              </p>
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
                   <div className={styles.iconCircle}>
@@ -119,16 +125,13 @@ const Contact = ({ showImage, showInfo }) => {
                   </div>
                   <div>
                     <h3>E-Mail</h3>
-                    <a
-                      href={`mailto:${website_email}`}
-                    
-                    >
+                    <a href={`mailto:${website_email}`}>
                       <p className={styles.contactForm_para}>{website_email}</p>
                     </a>
                   </div>
                 </div>
 
-                <div className={styles.contactItem}>
+                {/* <div className={styles.contactItem}>
                   <div className={styles.iconCircle}>
                     <IoLocationOutline className={styles.icon_contact} />
                   </div>
@@ -136,7 +139,7 @@ const Contact = ({ showImage, showInfo }) => {
                     <h3>Address</h3>
                     <p className={styles.contactForm_para}>{website_phone}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           )}
@@ -146,7 +149,7 @@ const Contact = ({ showImage, showInfo }) => {
                 src={contact_image}
                 alt="Contact Us"
                 width={500}
-                height={500}  
+                height={500}
                 className={styles.contact_image}
               />
             </div>
@@ -180,8 +183,6 @@ const Contact = ({ showImage, showInfo }) => {
                 isSubmitting,
               }) => (
                 <form onSubmit={handleSubmit}>
-              
-              
                   <div className={styles.formRow}>
                     <InputComponent
                       label="Name"
@@ -227,7 +228,7 @@ const Contact = ({ showImage, showInfo }) => {
                       error={
                         touched.number && errors.number ? errors.number : ""
                       }
-                      type="tel"  
+                      type="tel"
                       onBlur={handleBlur("number")}
                     />
                   </div>
@@ -257,7 +258,7 @@ const Contact = ({ showImage, showInfo }) => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
