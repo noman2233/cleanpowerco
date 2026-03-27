@@ -1,21 +1,28 @@
+ 
 .wrapper {
   padding: 80px 0;
   background: #fff;
   font-family: var(--font-jakarta);
 }
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 .layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 50px;
+  align-items: start;
 }
 
-/* LEFT CONTENT */
+ 
+.mainContent {
+  min-width: 0; 
+}
+
 .heroImageWrapper {
   position: relative;
   width: 100%;
@@ -34,13 +41,17 @@
   font-weight: 800;
   color: #1a1e26;
   margin-bottom: 25px;
+  line-height: 1.2;
 }
+
 .subTitle {
   font-size: 28px;
   font-weight: 800;
   color: #1a1e26;
   margin: 40px 0 20px;
+  line-height: 1.3;
 }
+
 .description {
   color: #666;
   line-height: 1.8;
@@ -53,12 +64,15 @@
   grid-template-columns: 1fr 1.2fr;
   gap: 30px;
   margin-top: 30px;
+  align-items: start;
 }
 
 .benefitList {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
+
 .benefitList li {
   display: flex;
   align-items: center;
@@ -72,6 +86,7 @@
 .square {
   width: 8px;
   height: 8px;
+  min-width: 8px;
   background: #27a770;
   flex-shrink: 0;
 }
@@ -80,6 +95,7 @@
   display: flex;
   gap: 20px;
 }
+
 .smallImg {
   position: relative;
   flex: 1;
@@ -88,11 +104,99 @@
   overflow: hidden;
 }
 
-/* SIDEBAR */
+
 .sidebar {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: sticky;
+  top: 24px;
+  min-width: 0;
+}
+
+.widget {
+  background: #f8f9fa;
+  padding: 40px 30px;
+  border-radius: 15px;
+}
+
+.widgetTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1e26;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #27a770;
+  display: inline-block;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.serviceLink {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.serviceLink:hover,
+.activeLink {
+  background: #27a770;
+  color: #fff;
+}
+
+.linkIcon {
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+/* ── CTA widget ── */
+.ctaWidget {
+  background: #1a1e26;
+  padding: 35px 30px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.ctaWidget h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  color: #fff;
+}
+
+.ctaWidget p {
+  font-size: 14px;
+  color: #aab0be;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background: #27a770;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.ctaBtn:hover {
+  background: #1e8f5e;
 }
 
 .searchBox {
@@ -109,6 +213,7 @@
   border: 1px solid #eee;
   border-radius: 5px;
   outline: none;
+  font-size: 14px;
 }
 
 .searchBox button {
@@ -120,48 +225,12 @@
   cursor: pointer;
 }
 
-.widget {
-  background: #f8f9fa;
-  padding: 40px 30px;
-  border-radius: 15px;
-}
-.widgetTitle {
-  font-size: 22px;
-  font-weight: 800;
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #27a770;
-  display: inline-block;
-}
-
-.linkList {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.serviceLink {
-  background: white;
-  padding: 15px 25px;
-  border-radius: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  color: #555;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.serviceLink:hover {
-  background: #27a770;
-  color: white;
-}
-
 .downloadList {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .downloadBtn {
   background: white;
   border: none;
@@ -182,33 +251,201 @@
   display: flex;
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 1270px) {
+ 
+@media (max-width: 1100px) {
   .layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 36px;
   }
-  .sidebar {
-    order: 2;
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subTitle {
+    font-size: 24px;
+  }
+
+  .widget {
+    padding: 30px 22px;
+  }
+
+  .ctaWidget {
+    padding: 28px 22px;
   }
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 60px 0;
+  }
+
   .layout {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
+
+  .mainContent {
+    order: 1;
+  }
+
   .sidebar {
     order: 2;
+    position: static;  
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subTitle {
+    font-size: 22px;
+  }
+
+  .benefitImages {
+    flex-direction: row;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
+  .wrapper {
+    padding: 48px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .heroImageWrapper {
+    border-radius: 14px;
+    margin-bottom: 28px;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .subTitle {
+    font-size: 20px;
+    margin: 30px 0 14px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
   .benefitSection {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
+
+  .benefitImages {
+    flex-direction: row;  
+    gap: 14px;
+  }
+
+  .widget {
+    padding: 28px 18px;
+  }
+
+  .widgetTitle {
+    font-size: 18px;
+  }
+
+  .ctaWidget {
+    padding: 24px 18px;
+  }
+
+  .ctaWidget h4 {
+    font-size: 17px;
+  }
+
+  .serviceLink {
+    padding: 13px 18px;
+    font-size: 13px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 36px 0;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .heroImageWrapper {
+    border-radius: 10px;
+    margin-bottom: 22px;
+  }
+
   .title {
-    font-size: 28px;
+    font-size: 22px;
   }
+
+  .subTitle {
+    font-size: 18px;
+    margin: 24px 0 12px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .benefitList li {
+    font-size: 13px;
+  }
+
   .benefitImages {
     flex-direction: column;
+    gap: 12px;
+  }
+
+  .smallImg {
+    aspect-ratio: 16 / 9;  
+    border-radius: 10px;
+  }
+
+  .layout {
+    gap: 28px;
+  }
+
+  .widget {
+    padding: 22px 14px;
+    border-radius: 12px;
+  }
+
+  .widgetTitle {
+    font-size: 16px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+  }
+
+  .serviceLink {
+    padding: 11px 14px;
+    font-size: 13px;
+    border-radius: 24px;
+  }
+
+  .ctaWidget {
+    padding: 20px 14px;
+    border-radius: 12px;
+  }
+
+  .ctaWidget h4 {
+    font-size: 16px;
+  }
+
+  .ctaWidget p {
+    font-size: 13px;
+  }
+
+  .ctaBtn {
+    padding: 10px 22px;
+    font-size: 13px;
   }
 }
