@@ -27,6 +27,12 @@ export default function sitemap() {
       changeFrequency: "yearly",
       priority: 0.5,
     },
+        {
+      url: `${baseUrl}/faq`,
+      lastModified: lastMod,
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
     /* --- Service Detail Pages (Static) --- */
     {
       url: `${baseUrl}/services/solar-system-design`,
