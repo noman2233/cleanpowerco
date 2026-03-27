@@ -95,6 +95,8 @@
 .viewMoreBtn:active {
   transform: scale(0.97);
 }
+
+
 .accordionItem {
   margin-bottom: 15px;
   border-radius: 4px;

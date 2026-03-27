@@ -600,3 +600,44 @@ export const PRIVACY_DATA = [
     desc: "We reserve the right to update this Privacy Policy to reflect changes in global privacy laws or our internal data handling practices. If significant changes are made—specifically regarding how we share or secure your personal information—we will notify all registered users via their primary email address and place a prominent notice on our homepage for 30 days.",
   },
 ];
+
+
+
+
+export const faqPageData = [
+  {
+    id: 1,
+    question: "What services does Energy Assistance Australia provide?",
+    answer: "We provide comprehensive end-to-end solar solutions across Australia. Our services include customized residential solar design, scalable commercial solar installations, high-speed EV charging stations, and advanced battery storage systems (like Tesla Powerwall and Sungrow) to help you achieve energy independence."
+  },
+  {
+    id: 2,
+    question: "Who can benefit from your solar solutions?",
+    answer: "Any Australian homeowner or business owner looking to hedge against rising electricity prices can benefit. We specifically cater to high-energy consumers, families wanting to reduce their carbon footprint, and enterprises looking to improve their ESG (Environmental, Social, and Governance) rating through sustainable infrastructure."
+  },
+  {
+    id: 3,
+    question: "Do you operate across all of Australia?",
+    answer: "Yes, we operate nationwide with localized teams in Victoria, New South Wales, Queensland, and Western Australia. Our head office is located in Melbourne, allowing us to manage large-scale deployments while maintaining local compliance with various state-based energy regulators and grid requirements."
+  },
+  {
+    id: 4,
+    question: "How does switching to solar help reduce energy costs?",
+    answer: "By generating your own electricity during daylight hours, you avoid paying the peak retail rates charged by your energy provider. Any excess energy you generate can be 'sold' back to the grid via a Feed-in Tariff (FiT) or stored in a battery for use at night, effectively slashing your quarterly power bills by up to 70-90%."
+  },
+  {
+    id: 5,
+    question: "Are solar solutions suitable for Australian conditions?",
+    answer: "Absolutely. In fact, Australia has some of the highest solar radiation levels in the world. We only install Tier-1, salt-mist corrosion-resistant panels and IP65-rated inverters specifically tested for the harsh Australian sun and coastal environments, ensuring your system performs reliably for 25+ years."
+  },
+  {
+    id: 6,
+    question: "Can businesses benefit from commercial solar systems?",
+    answer: "Commercial solar is one of the best financial investments a business can make. Most businesses operate during peak sunlight hours (9am–5pm), meaning they can consume 100% of their solar generation directly. This provides an immediate reduction in overheads and often results in a full ROI (Return on Investment) within 3 to 5 years."
+  },
+  {
+    id: 7,
+    question: "How do I know what size solar system I need?",
+    answer: "Our engineers perform a 'Load Profile Analysis' by reviewing your recent electricity bills. We look at your daily kilowatt-hour (kWh) usage and peak demand times to ensure we don't undersize your system or oversell you capacity that you don't need, maximizing your financial return."
+  }
+];

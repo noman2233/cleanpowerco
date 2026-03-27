@@ -1,0 +1,281 @@
+/* 
+.accordionItem {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.activeHeader {
+  background-color: #fff;
+  border-left: 4px solid #d4bc3b;
+}
+
+.activeQuestionText {
+  color: var(--color-green);
+}
+
+.icon {
+  background: #e9ecef;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.activeHeader .icon {
+  background: #d4edda;
+  color: #28a745;
+}
+
+.accordionContent {
+  overflow: hidden;
+  background: #fff;
+}
+
+.answerText {
+  padding: 0 20px 20px 20px;
+  color: #666;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .mainHeading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 40px 0px;
+    width: 90%;
+    margin: 0px 10px;
+  }
+  .mainHeading {
+    font-size: 28px;
+  }
+  .accordionHeader {
+    font-size: 16px;
+    padding: 15px;
+  }
+} */
+
+/* ============================================================
+   Accordian.module.css — Full Rewrite
+   Responsive: Desktop → Laptop → Tablet → Mobile
+   ============================================================ */
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 80px 0px 80px 0px;
+  font-family: var(--font-jakarta);
+}
+
+.accordionSide {
+  /* width: 50%; */
+  width: 900px;
+}
+
+.accordionItem {
+  margin-bottom: 25px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background-color: #f8f9fa;
+  border: none;
+  border-left: 4px solid transparent;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.accordionHeader:hover {
+  background-color: #f0f1f3;
+}
+
+.activeHeader {
+  background-color: #fff;
+  border-left: 4px solid #d4bc3b;
+}
+
+.activeQuestionText {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.icon {
+  background: #e9ecef;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background 0.3s, color 0.3s;
+  flex-shrink: 0;
+}
+
+.activeHeader .icon {
+  background: #d4edda;
+  color: #28a745;
+}
+
+.accordionContent {
+  overflow: hidden;
+  background: #fff;
+}
+
+.answerText {
+  padding: 20px 24px 20px 24px;
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* ── Laptop / small desktop ── */
+@media (max-width: 1100px) {
+  .accordionHeader {
+    font-size: 17px;
+    padding: 18px 20px;
+  }
+
+  .answerText {
+    padding: 0 20px 18px 20px;
+    font-size: 15px;
+  }
+  .accordionSide {
+    width: 80%;
+  }
+}
+
+/* ── Tablet landscape ── */
+@media (max-width: 900px) {
+  .accordionHeader {
+    font-size: 16px;
+    padding: 17px 18px;
+  }
+
+  .answerText {
+    font-size: 14px;
+    padding: 0 18px 16px 18px;
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    font-size: 17px;
+  }
+}
+
+/* ── Tablet portrait ── */
+@media (max-width: 680px) {
+  .accordionItem {
+    margin-bottom: 12px;
+  }
+
+  .accordionHeader {
+    font-size: 15px;
+    padding: 15px 16px;
+    gap: 12px;
+  }
+
+  .answerText {
+    font-size: 14px;
+    line-height: 1.65;
+    padding: 0 16px 15px 16px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+
+  .accordionSide {
+    width: 90%;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .accordionItem {
+    margin-bottom: 10px;
+    border-radius: 3px;
+  }
+
+  .accordionHeader {
+    font-size: 14px;
+    padding: 13px 14px;
+    gap: 10px;
+    font-weight: 600;
+  }
+
+  .answerText {
+    font-size: 13px;
+    line-height: 1.65;
+    padding: 0 14px 14px 14px;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    font-size: 15px;
+  }
+}
