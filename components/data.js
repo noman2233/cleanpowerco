@@ -20,7 +20,7 @@ export const MENU_ITEMS = [
   }, // Path changed
   { label: "About", id: "about", path: "/about", icon: IoIosArrowForward }, // Path changed
 
-  { label: "FAQs", id: "faqs", path: "/faq", icon: IoIosArrowForward },
+  // { label: "FAQs", id: "faqs", path: "/faq", icon: IoIosArrowForward },
   {
     label: "Contact",
     id: "contact",

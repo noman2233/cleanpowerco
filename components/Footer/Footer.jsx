@@ -38,10 +38,10 @@ const Footer = () => {
                   <FaAngleDoubleRight className={styles.forwardIcon} />
                   <Link href="/contact">Contact</Link>
                 </li>
-                <li>
+                {/* <li>
                   <FaAngleDoubleRight className={styles.forwardIcon} />
                   <Link href="/faq">Faq's</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
