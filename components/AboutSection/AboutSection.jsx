@@ -54,7 +54,7 @@ const AboutSection = () => {
               <span className={styles.check}>✔</span> Flat Roof Mounting System
             </li>
             <li>
-              <span className={styles.check}>✔</span> Solar Carport
+              <span className={styles.check}>✔</span> Tile/Tin roof mounting
             </li>
           </ul>
 

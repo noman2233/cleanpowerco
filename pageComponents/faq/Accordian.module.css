@@ -1,93 +1,3 @@
-/* 
-.accordionItem {
-  margin-bottom: 15px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.accordionHeader {
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f9fa;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-  text-align: left;
-  transition: all 0.3s;
-}
-
-.activeHeader {
-  background-color: #fff;
-  border-left: 4px solid #d4bc3b;
-}
-
-.activeQuestionText {
-  color: var(--color-green);
-}
-
-.icon {
-  background: #e9ecef;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.activeHeader .icon {
-  background: #d4edda;
-  color: #28a745;
-}
-
-.accordionContent {
-  overflow: hidden;
-  background: #fff;
-}
-
-.answerText {
-  padding: 0 20px 20px 20px;
-  color: #666;
-  line-height: 1.6;
-  font-size: 15px;
-}
-
-@media (max-width: 992px) {
-  .wrapper {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .mainHeading {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    padding: 40px 0px;
-    width: 90%;
-    margin: 0px 10px;
-  }
-  .mainHeading {
-    font-size: 28px;
-  }
-  .accordionHeader {
-    font-size: 16px;
-    padding: 15px;
-  }
-} */
-
-/* ============================================================
-   Accordian.module.css — Full Rewrite
-   Responsive: Desktop → Laptop → Tablet → Mobile
-   ============================================================ */
-
 .container {
   width: 100%;
   display: flex;
@@ -99,7 +9,6 @@
 }
 
 .accordionSide {
-  /* width: 50%; */
   width: 900px;
 }
 
@@ -192,6 +101,11 @@
     padding: 18px 20px;
   }
 
+  .activeQuestionText {
+    font-size: 17px;
+    padding: 18px 20px;
+  }
+
   .answerText {
     padding: 0 20px 18px 20px;
     font-size: 15px;
@@ -206,6 +120,10 @@
   .accordionHeader {
     font-size: 16px;
     padding: 17px 18px;
+  }
+ .activeQuestionText {
+    font-size: 16px;
+    padding: 18px 20px;
   }
 
   .answerText {
@@ -232,6 +150,13 @@
     padding: 15px 16px;
     gap: 12px;
   }
+
+  .activeQuestionText {
+      font-size: 15px;
+    padding: 15px 16px;
+    gap: 12px;
+  }
+
 
   .answerText {
     font-size: 14px;
@@ -265,6 +190,15 @@
     gap: 10px;
     font-weight: 600;
   }
+
+    .activeQuestionText {
+     font-size: 14px;
+    padding: 13px 14px;
+    gap: 10px;
+    font-weight: 600;
+  }
+
+
 
   .answerText {
     font-size: 13px;

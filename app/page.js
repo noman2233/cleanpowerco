@@ -20,7 +20,7 @@ const page = () => {
         <AboutSection />
         <WhyChooseUs />
         <FaqSection />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact showImage />
       </WebLayout>
     </div>

@@ -5,8 +5,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import { HiOutlineShieldCheck, HiOutlineLightningBolt } from "react-icons/hi";
 import { BiLeaf } from "react-icons/bi";
 export const website_email = "admin@cleanpowerco.com.au";
-export const website_phone = "1300976741";
-export const contact_para = "1300976741";
+export const website_phone = "1300 976 741";
+export const contact_para = "1300 976 741";
 export const contact_image =
   "https://img.freepik.com/premium-photo/female-worker-engineer-uniform-is-near-solar-panels_146671-144350.jpg?semt=ais_hybrid&w=740&q=80";
 

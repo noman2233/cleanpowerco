@@ -28,6 +28,11 @@
   gap: 6px;
 }
 
+.item span{
+  white-space:nowrap;
+}
+
+
 .icon {
   font-size: 18px;
   color: white;
